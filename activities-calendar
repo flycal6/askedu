@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+       
+        <title>ASK</title>
+        
+	     
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="American School of Kuwait">
+        <meta name="viewport" content="width=device-width">
+        
+        <!--[if IE 7]>
+	    <link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+        <![endif]-->
+	
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        
+        
+        <link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+        
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/vendor/jquery-1.10.1.min.js"></script>
+	<script>
+	    (function(window,$){
+		$(document).ready(function(){
+		    var currentlocation = window.location.pathname.substr(1);
+		    var $selected = $('#dynamic-sidebar a[href="'+currentlocation+'"]');
+		    $selected.addClass('active').parent().addClass('current');
+		});
+	    })(window,$);
+	    
+	    //put google analytics here
+	</script>
+        
+    </head>
+    <body>
+    
+	<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+
+<header id="top-header"> 
+    <div class="container header-container box-padding-both">
+	<div class="row">
+	    <div class="span12">
+		<div class="logo pull-left">
+		    <a href="index.html"><img src="img/logo.png" alt="Anchorra Logo" /></a>
+		</div><!-- /logo -->
+		
+		<!-- Navigation Area -->
+		<a class="nav-toggle pull-right"><i class="icon-align-justify"></i></a>
+		
+		<nav id="mobile-navigation" class="clear"></nav> 
+		
+		<nav id="navigation" class="pull-right">
+		    <ul>	    
+			<li><a href="#">Discover ASK  <i class="icon-chevron-down"></i></a>
+			    <ul>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="docs/school-profile.pdf" target="_blank">School Profile</a></li> 
+				<li><a href="superintendent.html">Governance</a></li>
+				<li><a href="director-of-technology.html">Directors</a></li>
+				<li><a href="employment.html">Employment</a></li>
+			    </ul>
+			</li>
+			
+			<li><a href="#">Programs <i class="icon-chevron-down"></i></a>
+			    <ul>
+				<li><a href="high-school.html">High School </a>
+				    <ul>
+					<li><a href="docs/hs course booklet.pdf" target="_blank">Course Selection Booklet</a></li>
+					<li><a href="docs/hs handbook.pdf" target="_blank">HS Handbook</a></li>
+				    </ul>
+				</li>	
+				<li><a href="middle-school.html">Middle School </a>
+				    <ul>
+					<li><a href="docs/ms course booklet.pdf" target="_blank">Course Selection Booklet</a></li>
+					<li><a href="docs/ms handbook.pdf" target="_blank">MS Handbook</a></li>
+				    </ul>
+				</li>
+				<li><a href="elementary-school.html">Elementary School </a>
+				    <ul>
+					<li><a href="docs/es handbook.pdf" target="_blank">ES Handbook</a></li>
+				    </ul>
+				</li>
+			    </ul>
+			</li>
+			
+			<li><a href="admissions.html">Admissions</a></li>                                    
+			
+			<li><a href="http://mail.google.com/a/ask.edu.kw">ASK Mail</a></li>                                    
+			
+			<li><a href="contact.html">Contact</a></li>
+		    </ul>
+		</nav>
+	    </div><!-- /span12 -->
+	</div><!-- /row -->
+    </div><!-- /container -->
+</header><!-- /top-header -->
+
+
+
+          <section id="wrapper">
+              <div class="container">
+                  <div class="row">
+
+                        <div id="content" class="span12 box-padding-both">
+
+                            <div class="row" style="text-align:center">
+                              <h2>2015/2016 Activities &amp; Athletics Calendar</h2>
+                              <iframe src="https://calendar.google.com/calendar/embed?title=Sports%20and%20Activities&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;hl=en&amp;bgcolor=%23FFFFFF&amp;src=ask.edu.kw_orspnhb0u8g8mofidee06krb9o%40group.calendar.google.com&amp;color=%23182C57&amp;src=ask.edu.kw_fv1u8b5kada0eb4n3095r3qmgg%40group.calendar.google.com&amp;color=%2342104A&amp;src=ask.edu.kw_vc5doobc584aj28bqspmgt0oe0%40group.calendar.google.com&amp;color=%235F6B02&amp;src=ask.edu.kw_8t4dhku9q9ei9veqp2brjn6iak%40group.calendar.google.com&amp;color=%2342104A&amp;src=ask.edu.kw_pj00vfdfb4q700cut1n5diksao%40group.calendar.google.com&amp;color=%236B3304&amp;src=ask.edu.kw_29r4q2q0grsb7uo251rp8ho294%40group.calendar.google.com&amp;color=%2329527A&amp;src=ask.edu.kw_q8shu7ir460i4sblk5o9ve8npk%40group.calendar.google.com&amp;color=%23865A5A&amp;src=ask.edu.kw_qot24atlntbs12kjplm5c47ghc%40group.calendar.google.com&amp;color=%23125A12&amp;src=ask.edu.kw_dtvo66h8j7pbfft39jqql180s4%40group.calendar.google.com&amp;color=%23333333&amp;src=ask.edu.kw_nvnaqphc5les44om23vvrtue30%40group.calendar.google.com&amp;color=%23875509&amp;src=ask.edu.kw_v1ta25pp7tfdmf3lbk80qjesng%40group.calendar.google.com&amp;color=%236B3304&amp;src=ask.edu.kw_spd5uia35clukmhscaungeqmu8%40group.calendar.google.com&amp;color=%238D6F47&amp;src=ask.edu.kw_a1eh7ekht7feech612vugheg88%40group.calendar.google.com&amp;color=%23B1440E&amp;src=ask.edu.kw_epvdfe6u5mlv9ldvlhcapu8jec%40group.calendar.google.com&amp;color=%2328754E&amp;src=ask.edu.kw_ottg14kf9k0tqqcdmbkdtga348%40group.calendar.google.com&amp;color=%23182C57&amp;src=ask.edu.kw_l0bntjb2j3648nhe4osi7l46k8%40group.calendar.google.com&amp;color=%23B1365F&amp;src=ask.edu.kw_8uek1289qhej621age21gisl7k%40group.calendar.google.com&amp;color=%235229A3&amp;src=ask.edu.kw_pm4v1gmmnd1r6sv7hk5otnjplo%40group.calendar.google.com&amp;color=%23B1365F&amp;src=ask.edu.kw_8j4a3cu6vepq9g5le3jgpmfl40%40group.calendar.google.com&amp;color=%238D6F47&amp;src=ask.edu.kw_isv6suuo45s99o5quiu3412q2s%40group.calendar.google.com&amp;color=%23711616&amp;src=ask.edu.kw_sqa5qi0aqf6a0ls7otpnu0dtfo%40group.calendar.google.com&amp;color=%23711616&amp;src=ask.edu.kw_c9rpso26fm5ig610ateicf0an0%40group.calendar.google.com&amp;color=%2323164E&amp;src=ask.edu.kw_524h9109sj5kuc4dhd55p47nls%40group.calendar.google.com&amp;color=%235F6B02&amp;src=ask.edu.kw_i7jdhkg3dntkbfdgjmd1hb6068%40group.calendar.google.com&amp;color=%230F4B38&amp;src=ask.edu.kw_dreenmlefc6am1kocg273k8c1k%40group.calendar.google.com&amp;color=%23875509&amp;src=ask.edu.kw_t88md68e66gt61sgcj60cg472o%40group.calendar.google.com&amp;color=%23865A5A&amp;src=ask.edu.kw_h4tph0m9iscp3370e7e1jsid5k%40group.calendar.google.com&amp;color=%23865A5A&amp;src=ask.edu.kw_8t6o2lnu5rppn5nifsqs3jvpac%40group.calendar.google.com&amp;color=%23333333&amp;ctz=Asia%2FRiyadh" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe><br>
+    				
+			    </div>
+
+                        </div><!-- /content -->
+                  </div><!-- /row -->
+              </div><!-- /container -->
+          </section><!-- /wrapper -->
+
+
+	  <footer id="main-footer">
+
+      <div class="container inner-footer box-padding-both">
+	  <div class="row">
+	      <div class="span3">
+
+		<h5>About us</h5>
+
+		<p>The American School of Kuwait was founded in 1964. It is a privately owned,
+		independent coeducational day school which offers a general academic curriculum
+		for students of all nationalities.</p>
+
+		<h5>get Social</h5>
+
+		<div class="footer-social">
+		    <a href="#"><i class="icon-twitter"></i></a>
+		    <a href="#"><i class="icon-facebook"></i></a>
+		    <a href="#"><i class="icon-instagram"></i></a>
+		</div><!-- /top-social -->
+		   
+	      </div><!-- /span3 -->
+	  </div><!-- /row -->
+      </div><!-- /container -->
+
+  </footer>
+  
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+
+
+
+    </body>
+</html>
