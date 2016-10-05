@@ -2330,7 +2330,7 @@ padding-bottom: 32px;
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
  .proj-box-wr{
-  width:33%;
+  width:25%;
   float:left;
  }
  .project-box {
