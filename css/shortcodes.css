@@ -13,10 +13,10 @@
 
 .faq-accordion .accordion-group {
 	margin-bottom: 15px;
-	border:        0px;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	border-radius: 0px;
+	border:        0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
 }
 .faq-accordion .accordion-heading {
 	background: #ecf5fd;
@@ -43,7 +43,7 @@
 }
 .faq-accordion .accordion-inner {
 	padding:    9px 0 9px 78px;
-	border-top: 0px;
+	border-top: 0;
 	font-size:  13px;
 	color:      #666666;
 }
@@ -58,10 +58,10 @@
 
 .normal-accordion .accordion-group{
 	margin-bottom: 15px;
-	border:        0px;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	border-radius: 0px;
+	border:        0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
 }
 .normal-accordion .accordion-heading {
 	background: #eeeeee;
@@ -90,7 +90,7 @@
 }
 .normal-accordion .accordion-inner {
 	padding: 	9px 0 9px 78px;
-	border-top: 0px;
+	border-top: 0;
 	font-size:  13px;
 	color: 	    #666666;
 }
@@ -231,7 +231,7 @@
 .red-cta-btn:hover{
 	color:           #ffffff;
 	top:             7px;
-	border:          0px solid;
+	border:          0 solid;
 	margin-bottom:   7px;
 	text-decoration: none;
 	position:        relative;
@@ -255,7 +255,7 @@
 .blue-cta-btn:hover{
 	color:   #ffffff;
 	top:     7px;
-	border:  0px solid;
+	border:  0 solid;
 	margin-bottom:   7px;
 	text-decoration: none;
 	position:        relative;
@@ -279,7 +279,7 @@
 .cyan-cta-btn:hover{
 	color:           #ffffff;
 	top:             7px;
-	border:          0px solid;
+	border:          0 solid;
 	margin-bottom:   7px;
 	text-decoration: none;
 	position:        relative;
@@ -310,13 +310,10 @@ ul.horizontal-tabs li i.icon-caret-down{
 	display:     none; /*Show when the tab is active*/
 }
 ul.horizontal-tabs li a{
-	padding-right:  20px;
-	padding-left:   20px;
-	display:        block;
-	padding-top:    3px;
-	border-right:   1px solid #fff;
-	padding-bottom: 3px;
-	color:          #9d9a93;
+    display:        block;
+    border-right:   1px solid #fff;
+    padding: 3px 20px;
+    color:          #9d9a93;
 	text-decoration: none;
 }
 ul.horizontal-tabs li a:hover{
@@ -476,7 +473,7 @@ ul.horizontal-tabs li.active i.icon-caret-down{
 	display:       inline-block;
 	float:         left;
 	color:         #ffffff;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 .blue-hero-box .subtitle {
 	font-size: 1.450em;
@@ -534,7 +531,7 @@ ul.horizontal-tabs li.active i.icon-caret-down{
 .recent .carousel-control {
 	position:    absolute;
 	top:         30%;
-	right:       0px;
+	right:       0;
 	left:        auto;
 	width:       40px;
 	height:      40px;
@@ -556,7 +553,7 @@ ul.horizontal-tabs li.active i.icon-caret-down{
 .recent a.posts-link {
 	position:    absolute;
 	top:         70%;
-	right:       0px;
+	right:       0;
 	left:        auto;
 	width:       40px;
 	height:      40px;
@@ -636,7 +633,7 @@ ul.horizontal-tabs li.active i.icon-caret-down{
 .testimonials .carousel-control {
 	position:    absolute;
 	top:         40%;
-	right:       0px;
+	right:       0;
 	left:        auto;
 	width:       40px;
 	height:      40px;
