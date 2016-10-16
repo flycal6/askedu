@@ -28,7 +28,7 @@
         (function(window,$){
         $(document).ready(function(){
             var currentlocation = window.location.pathname.substr(1);
-            var $selected = $('#dynamic-sidebar a[href="'+currentlocation+'"]');
+            var $selected = $('#dynamic-sidebar').find('a[href="'+currentlocation+'"]');
             $selected.addClass('active').parent().addClass('current');
         });
         })(window,$);
