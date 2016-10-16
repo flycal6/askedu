@@ -29,7 +29,7 @@
 	    (function(window,$){
 		$(document).ready(function(){
 		    var currentlocation = window.location.pathname.substr(1);
-		    var $selected = $('#dynamic-sidebar a[href="'+currentlocation+'"]');
+		    var $selected = $('#dynamic-sidebar').find('a[href="'+currentlocation+'"]');
 		    $selected.addClass('active').parent().addClass('current');
 		});
 	    })(window,$);
@@ -155,7 +155,7 @@
 
                             <h2>Elementary School Administration</h2>
 
-                            <img src="img/steve-caley.jpg" alt="" class="pull-right">
+                            <img src="img/steve-caley.png" alt="" class="pull-right">
 
                             
 							<h6><a href="mailto:caleys@ask.edu.kw">Steven Caley</a>, Principal</h6>
