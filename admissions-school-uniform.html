@@ -29,7 +29,7 @@
 	    (function(window,$){
 		$(document).ready(function(){
 		    var currentlocation = window.location.pathname.substr(1);
-		    var $selected = $('#dynamic-sidebar a[href="'+currentlocation+'"]');
+		    var $selected = $('#dynamic-sidebar').find('a[href="'+currentlocation+'"]');
 		    $selected.addClass('active').parent().addClass('current');
 		});
 	    })(window,$);
@@ -146,21 +146,17 @@
 
                             <hr>
 
-                            <p>We are currently selling our new uniform as a package to ensure that as many students as possible can begin to wear it. We will be receiving more stock throughout the first few months of school. If your son or daughter needs a size we do not have, please request it with our Uniform Shop, and we will arrange to have it brought in for you.
-                            </p>
-                            
-                            <p>Please note that all students have until the end of December to adopt the new uniform. In the meantime, students may wear their uniform from last year.</p>
-
                             <h6>The Falcon's Nest Hours</h6>
                             <p>The Uniform Shop is located beside the ASK Auditorium and is open each day during school hours.</p>
 
                             <h6>Purpose</h6>
-                            <p>The purpose of the School Uniform Policy is to encourage our students to experience a greater sense of school identity and belonging, to reduce school clothing costs and to encourage a high level of program participation.</p>
+                            <p>The purpose of the School Uniform Policy is to encourage our students to experience a
+								greater sense of school identity and belonging, to reduce school clothing costs and to
+								encourage a high level of program participation.</p>
 
                             <h6>General Requirements</h6>
 
                             <ul class="admissions-list">
-                            	<li>Tops, bottoms and PE kit must be selected from the approved articles available at the school store.</li>
                             	<li>All clothing must be loose fitting and modest in appearance.</li>
                             	<li>Sleeves must drape over the shoulder onto the upper arm.</li>
                             	<li>Mid-riffs must not be showing.</li>
@@ -174,26 +170,36 @@
        								<th colspan="3" align="center">Tops</th>
     							<tr>
     							<tr>
-       								<td colspan="3" align="center">Each of the schools will have a different color top beginning in the fall of 2014. Elementary School students will wear light blue, Middle School students will sport grey, and High School students will don navy. Students will be able to wear ASK-branded polo shirts and hoodies. These different colors will help us to easily identify the students at ASK.</td>
+       								<td colspan="3" align="center">
+										Elementary School students will wear light blue.<br />
+										Middle School students will sport grey.<br />
+										High School students will don navy.<br />
+										Students will be able to wear ASK-branded polo shirts and hoodies. These different
+										colors will help us to easily identify the students at ASK.</td>
     							<tr>
                                 
     							<tr>
        								<th colspan="3" align="center">Bottoms</th>
     							<tr>
     							<tr>
-       								<td colspan="3" align="center">All students at ASK will wear navy pants which will be made available to all students in the fall of 2014.</td>
+       								<td colspan="3" align="center">Navy blue pants, shorts, skirts that are at or below
+										the knees and blue jeans (jeans should not be ripped or faded). Sweatpants,
+										jeggings and leggings are <u>not</u> acceptable attire for our students.</td>
     							<tr>                                
     							<tr>
        								<th colspan="3" align="center">For Physical Education</th>
     							<tr>
     							<tr>
-       								<td colspan="3" align="center">A PE Kit featuring navy shorts and a white T-shirt will be made available to all students in Middle and High School.</td>
+       								<td colspan="3" align="center">A PE Kit featuring navy shorts and a white T-shirt
+										will be made available to all students in Middle and High School.</td>
                             	</tr>	
     							<tr>
        								<th colspan="3" align="center">Shoes & Accessories</th>
     							<tr>
     							<tr>
-       								<td colspan="3" align="center">Running shoes and dress shoes are acceptable footwear.<br>Running shoes must be worn on PE days.<br>Flip flops are not acceptable.<br>Hats are recommended to be worn during any outdoor activities.<br>Hats are not permitted in class.</td>
+       								<td colspan="3" align="center">Running shoes and dress shoes are acceptable footwear.<br>
+										Running shoes must be worn on PE days.<br>Flip flops are not acceptable.<br>Hats
+										are recommended to be worn during any outdoor activities.<br>Hats are not permitted in class.</td>
                             	</tr>		
 							</table>	
                         </div><!-- /content -->
