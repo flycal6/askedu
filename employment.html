@@ -26,11 +26,11 @@
 
     <script>
         (function(window,$){
-        $(document).ready(function(){
-            var currentlocation = window.location.pathname.substr(1);
-            var $selected = $('#dynamic-sidebar').find('a[href="'+currentlocation+'"]');
-            $selected.addClass('active').parent().addClass('current');
-        });
+            $(document).ready(function(){
+                var currentlocation = window.location.pathname.substr(1);
+                var $selected = $('#dynamic-sidebar').find('a[href="'+currentlocation+'"]');
+                $selected.addClass('active').parent().addClass('current');
+            });
         })(window,$);
 
         //put google analytics here
@@ -39,11 +39,11 @@
 
 <body>
 
-    <!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
 
-<header id="top-header"> 
+<header id="top-header">
     <div class="container header-container box-padding-both">
         <div class="row">
             <div class="span12">
@@ -58,43 +58,43 @@
 
                 <nav id="navigation" class="pull-right">
                     <ul>
-                    <li><a href="#">Discover ASK  <i class="icon-chevron-down"></i></a>
-                        <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="docs/school-profile.pdf" target="_blank">School Profile</a></li>
-                        <li><a href="superintendent.html">Governance</a></li>
-                        <li><a href="director-of-technology.html">Directors</a></li>
-                        <li><a href="employment.html">Employment</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="#">Programs <i class="icon-chevron-down"></i></a>
-                        <ul>
-                        <li><a href="high-school.html">High School </a>
+                        <li><a href="#">Discover ASK  <i class="icon-chevron-down"></i></a>
                             <ul>
-                            <li><a href="docs/hs course booklet.pdf" target="_blank">Course Selection Booklet</a></li>
-                            <li><a href="docs/hs handbook.pdf" target="_blank">HS Handbook</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="docs/school-profile.pdf" target="_blank">School Profile</a></li>
+                                <li><a href="superintendent.html">Governance</a></li>
+                                <li><a href="director-of-technology.html">Directors</a></li>
+                                <li><a href="employment.html">Employment</a></li>
                             </ul>
                         </li>
-                        <li><a href="middle-school.html">Middle School </a>
+
+                        <li><a href="#">Programs <i class="icon-chevron-down"></i></a>
                             <ul>
-                            <li><a href="docs/ms course booklet.pdf" target="_blank">Course Selection Booklet</a></li>
-                            <li><a href="docs/ms handbook.pdf" target="_blank">MS Handbook</a></li>
+                                <li><a href="high-school.html">High School </a>
+                                    <ul>
+                                        <li><a href="docs/hs course booklet.pdf" target="_blank">Course Selection Booklet</a></li>
+                                        <li><a href="docs/hs handbook.pdf" target="_blank">HS Handbook</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="middle-school.html">Middle School </a>
+                                    <ul>
+                                        <li><a href="docs/ms course booklet.pdf" target="_blank">Course Selection Booklet</a></li>
+                                        <li><a href="docs/ms handbook.pdf" target="_blank">MS Handbook</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="elementary-school.html">Elementary School </a>
+                                    <ul>
+                                        <li><a href="docs/es handbook.pdf" target="_blank">ES Handbook</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
-                        <li><a href="elementary-school.html">Elementary School </a>
-                            <ul>
-                            <li><a href="docs/es handbook.pdf" target="_blank">ES Handbook</a></li>
-                            </ul>
-                        </li>
-                        </ul>
-                    </li>
 
-                    <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
 
-                    <li><a href="http://mail.google.com/a/ask.edu.kw">ASK Mail</a></li>
+                        <li><a href="http://mail.google.com/a/ask.edu.kw">ASK Mail</a></li>
 
-                    <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div><!-- /span12 -->
@@ -103,96 +103,96 @@
 </header><!-- /top-header -->
 
 <section id="wrapper">
-  <div class="container">
-      <div class="row">
-        <aside id="sidebar" class="span3 box-padding-left">
-            <div class="menu-widget widget">
+    <div class="container">
+        <div class="row">
+            <aside id="sidebar" class="span3 box-padding-left">
+                <div class="menu-widget widget">
 
-            <h5>Employment Links</h5>
+                    <h5>Employment Links</h5>
 
-            <ul id="dynamic-sidebar">
-                <li><a href="web-documents/employment/faq.pdf" target="_blank">FAQ's</a></li>
-                <li><a href="web-documents/employment/housing.pdf" target="_blank">Housing</a></li>
-                <li><a href="web-documents/employment/kuwait info.pdf" target="_blank">Life in Kuwait</a></li>
-                <li><a href="web-documents/employment/salaries.pdf" target="_blank">Salary Information</a></li>
-            </ul>
+                    <ul id="dynamic-sidebar">
+                        <li><a href="web-documents/employment/faq.pdf" target="_blank">FAQ's</a></li>
+                        <li><a href="web-documents/employment/housing.pdf" target="_blank">Housing</a></li>
+                        <li><a href="web-documents/employment/kuwait info.pdf" target="_blank">Life in Kuwait</a></li>
+                        <li><a href="web-documents/employment/salaries.pdf" target="_blank">Salary Information</a></li>
+                    </ul>
 
-            </div><!-- /menu-widget -->
+                </div><!-- /menu-widget -->
 
-        </aside><!-- /sidebar -->
+            </aside><!-- /sidebar -->
 
             <div id="content" class="span9 box-padding-right">
-              <div class="row">
-                <div class="span9">
-                  <div class="service-slider carousel slide pull-left" id="service-slider">
-                      <!-- Carousel items -->
-                      <div class="carousel-inner">
-                        <div class="active item">
-                            <div class="slide-content">
-                                <img src="img/employ-1.jpg" alt="">
-                            </div><!-- /slide-content -->
-                        </div>
+                <div class="row">
+                    <div class="span9">
+                        <div class="service-slider carousel slide pull-left" id="service-slider">
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="active item">
+                                    <div class="slide-content">
+                                        <img src="img/employ-1.jpg" alt="">
+                                    </div><!-- /slide-content -->
+                                </div>
 
-                        <div class="item">
-                          <div class="slide-content">
-                            <img src="img/employ-2.jpg" alt="">
-                          </div><!-- /slide-content -->
-                        </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <img src="img/employ-2.jpg" alt="">
+                                    </div><!-- /slide-content -->
+                                </div>
 
-                        <div class="item">
-                          <div class="slide-content">
-                            <img src="img/employ-3.jpg" alt="">
-                          </div><!-- /slide-content -->
-                        </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <img src="img/employ-3.jpg" alt="">
+                                    </div><!-- /slide-content -->
+                                </div>
 
-                        <div class="item">
-                          <div class="slide-content">
-                            <img src="img/employ-4.jpg" alt="">
-                          </div><!-- /slide-content -->
-                        </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <img src="img/employ-4.jpg" alt="">
+                                    </div><!-- /slide-content -->
+                                </div>
 
-                        <div class="item">
-                          <div class="slide-content">
-                            <img src="img/employ-5.jpg" alt="">
-                          </div><!-- /slide-content -->
-                        </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <img src="img/employ-5.jpg" alt="">
+                                    </div><!-- /slide-content -->
+                                </div>
 
-                        <div class="item">
-                          <div class="slide-content">
-                            <img src="img/employ-6.jpg" alt="">
-                          </div><!-- /slide-content -->
-                        </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <img src="img/employ-6.jpg" alt="">
+                                    </div><!-- /slide-content -->
+                                </div>
 
-                        <div class="item">
-                          <div class="slide-content">
-                            <img src="img/employ-7.jpg" alt="">
-                          </div><!-- /slide-content -->
-                        </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <img src="img/employ-7.jpg" alt="">
+                                    </div><!-- /slide-content -->
+                                </div>
 
-                        <div class="item">
-                          <div class="slide-content">
-                            <img src="img/employ-8.jpg" alt="">
-                          </div><!-- /slide-content -->
-                        </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <img src="img/employ-8.jpg" alt="">
+                                    </div><!-- /slide-content -->
+                                </div>
 
-                        <div class="item">
-                          <div class="slide-content">
-                            <img src="img/employ-9.jpg" alt="">
-                          </div><!-- /slide-content -->
-                        </div>
-                      </div><!-- Carousel -->
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <img src="img/employ-9.jpg" alt="">
+                                    </div><!-- /slide-content -->
+                                </div>
+                            </div><!-- Carousel -->
 
-                      <a class="carousel-control left" href="#service-slider" data-slide="prev">&lsaquo;</a>
-                      <a class="carousel-control right" href="#service-slider" data-slide="next">&rsaquo;</a>
+                            <a class="carousel-control left" href="#service-slider" data-slide="prev">&lsaquo;</a>
+                            <a class="carousel-control right" href="#service-slider" data-slide="next">&rsaquo;</a>
 
-                  </div><!-- /home-v1-featured-slider -->
+                        </div><!-- /home-v1-featured-slider -->
 
-                  <h3>Employment @ ASK</h3>
-                  <p>At the American School of Kuwait we firmly believe that quality education is highly dependent on both the recruitment and development of a talented and a vibrant group of teachers.</p>
-                  <p>To this end, we place critical importance, and expend considerable energy, on the recruitment of new faculty. The vast majority of teachers are hired through interviews held at recruitment centers in North America in February each year, although the school at times does attend recruitment fairs in Australia, New Zealand, Dubai and England. All vacancies are listed on the ASK website as well as with TIE online, Search Associates, ISS, CIS, TRI, University of Northern Iowa and Queen's University (Canada) recruitment agencies.</p>
-                  <h3><!-- There are currently no vacancies for the 2016-2017 school year. --></h3>
-                </div><!-- /span9 -->
-              </div><!-- /row -->
+                        <h3>Employment @ ASK</h3>
+                        <p>At the American School of Kuwait we firmly believe that quality education is highly dependent on both the recruitment and development of a talented and a vibrant group of teachers.</p>
+                        <p>To this end, we place critical importance, and expend considerable energy, on the recruitment of new faculty. The vast majority of teachers are hired through interviews held at recruitment centers in North America in February each year, although the school at times does attend recruitment fairs in Australia, New Zealand, Dubai and England. All vacancies are listed on the ASK website as well as with TIE online, Search Associates, ISS, CIS, TRI, University of Northern Iowa and Queen's University (Canada) recruitment agencies.</p>
+                        <h3><!-- There are currently no vacancies for the 2016-2017 school year. --></h3>
+                    </div><!-- /span9 -->
+                </div><!-- /row -->
 
                 <hr>
                 <br>
@@ -229,86 +229,86 @@
                     <div class="carousel-inner">
 
                         <!--<div class="active item">-->
-                            <!--<div class="slide-content">-->
-                              <!--<img src="img/test-angela-suk.jpg" alt="">-->
-                              <!--<h2>ASK is a wonderful place to teach.</h2>-->
-                              <!--<span class="divider">-</span> -->
-                              <!--<span class="author">Angela Suk</span> -->
-                              <!--<span class="desig">Elementary School Teacher</span>&lt;!&ndash; /desig &ndash;&gt;-->
-                            <!--</div>&lt;!&ndash; /slide-content &ndash;&gt;-->
-                        <!--</div>-->
-
-                        <!--<div class="item">-->
-                          <!--<div class="slide-content">-->
-                               <!--<img src="img/test-1.jpg" alt="">-->
-                               <!--<h2>Teaching at ASK was a great decision.</h2>-->
-                               <!--<span class="divider">-</span> -->
-                              <!--<span class="author">Sharon Blount</span> -->
-                              <!--<span class="desig">Elementary School</span>&lt;!&ndash; /desig &ndash;&gt;-->
-                          <!--</div>&lt;!&ndash; /slide-content &ndash;&gt;-->
-                        <!--</div>-->
-
-                        <!--<div class="item">-->
-                          <!--<div class="slide-content">-->
-                               <!--<img src="img/test-3.jpg" alt="">-->
-                               <!--<h2>It's a great place to grow professionally.</h2>-->
-                               <!--<span class="divider">-</span> -->
-                              <!--<span class="author">Aaron Willette</span> -->
-                              <!--<span class="desig">Middle School Assistant Principal</span>&lt;!&ndash; /desig &ndash;&gt;-->
-                          <!--</div>&lt;!&ndash; /slide-content &ndash;&gt;-->
-                        <!--</div>-->
-
-                        <!--<div class="item">-->
-                          <!--<div class="slide-content">-->
-                               <!--<img src="img/test-4.jpg" alt="">-->
-                               <!--<h2>Come learn with us!</h2>-->
-                               <!--<span class="divider">-</span> -->
-                              <!--<span class="author">Iain Macfarlane</span> -->
-                              <!--<span class="desig">Elementary School Principal</span>&lt;!&ndash; /desig &ndash;&gt;-->
-                          <!--</div>&lt;!&ndash; /slide-content &ndash;&gt;-->
+                        <!--<div class="slide-content">-->
+                        <!--<img src="img/test-angela-suk.jpg" alt="">-->
+                        <!--<h2>ASK is a wonderful place to teach.</h2>-->
+                        <!--<span class="divider">-</span> -->
+                        <!--<span class="author">Angela Suk</span> -->
+                        <!--<span class="desig">Elementary School Teacher</span>&lt;!&ndash; /desig &ndash;&gt;-->
+                        <!--</div>&lt;!&ndash; /slide-content &ndash;&gt;-->
                         <!--</div>-->
 
                         <div class="active item">
-                          <div class="slide-content">
-                               <img src="img/test-5.jpg" alt="">
-                               <h2>It's a place that lives its mission.</h2>
-                               <span class="divider">-</span>
-                              <span class="author">Pauline Roberts</span>
-                              <span class="desig">Elementary Assistant Principal</span><!-- /desig -->
-                          </div><!-- /slide-content -->
+                            <div class="slide-content">
+                                <img src="img/test-nate.png" alt="">
+                                <h2>Teaching at ASK was a great decision.</h2>
+                                <span class="divider">-</span>
+                                <span class="author">Nathan Walker</span>
+                                <span class="desig">Literacy Coach/English Teacher</span><!-- /desig -->
+                            </div><!-- /slide-content -->
                         </div>
 
                         <div class="item">
-                          <div class="slide-content">
-                               <img src="img/test-6.jpg" alt="">
-                               <h2>ASK prides itself on collegiality!</h2>
-                               <span class="divider">-</span>
-                              <span class="author">Ana Allen</span>
-                              <span class="desig">Elementary Assistant Principal</span><!-- /desig -->
-                          </div><!-- /slide-content -->
+                            <div class="slide-content">
+                                <img src="img/test-sairah.png" alt="">
+                                <h2>It's a great place to grow professionally.</h2>
+                                <span class="divider">-</span>
+                                <span class="author">Sairah Fazil</span>
+                                <span class="desig">Technology Coach</span><!-- /desig -->
+                            </div><!-- /slide-content -->
                         </div>
 
                         <div class="item">
-                          <div class="slide-content">
-                               <img src="img/test-jackie.jpg" alt="">
-                               <h2>ASK has such a sense of community. It truly becomes a home away from home.</h2>
-                               <span class="divider">-</span>
-                              <span class="author">Jacqueline Thomas</span>
-                              <span class="desig">High School Assistant Principal</span><!-- /desig -->
-                          </div><!-- /slide-content -->
+                            <div class="slide-content">
+                                <img src="img/test-dan.png" alt="">
+                                <h2>Come learn with us!</h2>
+                                <span class="divider">-</span>
+                                <span class="author">Dan Summers</span>
+                                <span class="desig">Physical Education Teacher/Coach</span><!-- /desig -->
+                            </div><!-- /slide-content -->
                         </div>
 
                         <div class="item">
-                          <div class="slide-content">
-                               <img src="img/test-adam-carragher.jpg" alt="">
-                               <h2>This place is awesome.</h2>
-                               <span class="divider">-</span>
-                              <span class="author">Adam Carragher</span>
-                              <span class="desig">Elementary School Teacher</span><!-- /desig -->
-                          </div><!-- /slide-content -->
+                            <div class="slide-content">
+                                <img src="img/test-5.jpg" alt="">
+                                <h2>It's a place that lives its mission.</h2>
+                                <span class="divider">-</span>
+                                <span class="author">Pauline Roberts</span>
+                                <span class="desig">Elementary Assistant Principal</span><!-- /desig -->
+                            </div><!-- /slide-content -->
+                        </div>
+
+                        <div class="item">
+                            <div class="slide-content">
+                                <img src="img/test-6.jpg" alt="">
+                                <h2>ASK prides itself on collegiality!</h2>
+                                <span class="divider">-</span>
+                                <span class="author">Ana Allen</span>
+                                <span class="desig">Elementary Assistant Principal</span><!-- /desig -->
+                            </div><!-- /slide-content -->
+                        </div>
+
+                        <div class="item">
+                            <div class="slide-content">
+                                <img src="img/test-jackie.jpg" alt="">
+                                <h2>ASK has such a sense of community. It truly becomes a home away from home.</h2>
+                                <span class="divider">-</span>
+                                <span class="author">Jacqueline Thomas</span>
+                                <span class="desig">High School Assistant Principal</span><!-- /desig -->
+                            </div><!-- /slide-content -->
+                        </div>
+
+                        <div class="item">
+                            <div class="slide-content">
+                                <img src="img/test-adam-carragher.jpg" alt="">
+                                <h2>This place is awesome.</h2>
+                                <span class="divider">-</span>
+                                <span class="author">Adam Carragher</span>
+                                <span class="desig">Elementary School Teacher</span><!-- /desig -->
+                            </div><!-- /slide-content -->
                         </div>
                     </div>
-                                  
+
                     <!-- Carousel -->
                     <a class="carousel-control left" href="#testimonials" data-slide="prev"><i class="icon-chevron-down"></i></a>
                     <a class="carousel-control right" href="#testimonials" data-slide="next"><i class="icon-chevron-up"></i></a>
@@ -320,23 +320,23 @@
                 <!--<h5>Employment Details</h5>-->
                 <!--<div class="row">-->
 
-                  <!--<div class="span3">-->
-                    <!--<div class="project-box">-->
-                      <!--<img src="img/employ-info-2.jpg" alt="">-->
-                      <!--<i class="icon-caret-right"></i>-->
-                      <!--<h4>Life at ASK</h4>-->
-                      <!--<p>Galleries</p>-->
-                    <!--</div>&lt;!&ndash; /project-box &ndash;&gt;-->
-                  <!--</div>&lt;!&ndash; /span3 &ndash;&gt;-->
+                <!--<div class="span3">-->
+                <!--<div class="project-box">-->
+                <!--<img src="img/employ-info-2.jpg" alt="">-->
+                <!--<i class="icon-caret-right"></i>-->
+                <!--<h4>Life at ASK</h4>-->
+                <!--<p>Galleries</p>-->
+                <!--</div>&lt;!&ndash; /project-box &ndash;&gt;-->
+                <!--</div>&lt;!&ndash; /span3 &ndash;&gt;-->
 
-                  <!--<div class="span3">-->
-                    <!--<div class="project-box">-->
-                      <!--<img src="img/employ-info.jpg" alt="">-->
-                      <!--<i class="icon-caret-right"></i>-->
-                      <!--<h4>General Information</h4>-->
-                      <!--<p>Contract Information</p>-->
-                    <!--</div>&lt;!&ndash; /project-box &ndash;&gt;-->
-                  <!--</div>&lt;!&ndash; /span3 &ndash;&gt;-->
+                <!--<div class="span3">-->
+                <!--<div class="project-box">-->
+                <!--<img src="img/employ-info.jpg" alt="">-->
+                <!--<i class="icon-caret-right"></i>-->
+                <!--<h4>General Information</h4>-->
+                <!--<p>Contract Information</p>-->
+                <!--</div>&lt;!&ndash; /project-box &ndash;&gt;-->
+                <!--</div>&lt;!&ndash; /span3 &ndash;&gt;-->
 
                 <!---->
 
@@ -348,40 +348,40 @@
 <iframe width="420" height="315" src="https://www.youtube.com/embed/W_ifrGFjdgo" frameborder="0" allowfullscreen></iframe>-->
                 <br>
             </div><!-- /content -->
-      </div><!-- /row -->
-  </div><!-- /container -->
+        </div><!-- /row -->
+    </div><!-- /container -->
 </section><!-- /wrapper -->
 
-    <footer id="main-footer">
+<footer id="main-footer">
 
-      <div class="container inner-footer box-padding-both">
-	      <div class="row">
-	          <div class="span3">
-                  <h5>About us</h5>
+    <div class="container inner-footer box-padding-both">
+        <div class="row">
+            <div class="span3">
+                <h5>About us</h5>
 
-                  <p>The American School of Kuwait was founded in 1964. It is a privately owned, independent
-                      coeducational day school which offers a general academic curriculum for students of all
-                      nationalities.</p>
+                <p>The American School of Kuwait was founded in 1964. It is a privately owned, independent
+                    coeducational day school which offers a general academic curriculum for students of all
+                    nationalities.</p>
 
-		<h5>get Social</h5>
+                <h5>get Social</h5>
 
-		<div class="footer-social">
-		    <a href="#"><i class="icon-twitter"></i></a>
-		    <a href="#"><i class="icon-facebook"></i></a>
-		    <a href="#"><i class="icon-instagram"></i></a>
-		</div><!-- /top-social -->
-		   
-	      </div><!-- /span3 -->
-	  </div><!-- /row -->
-      </div><!-- /container -->
+                <div class="footer-social">
+                    <a href="#"><i class="icon-twitter"></i></a>
+                    <a href="#"><i class="icon-facebook"></i></a>
+                    <a href="#"><i class="icon-instagram"></i></a>
+                </div><!-- /top-social -->
 
-  </footer>
-  
+            </div><!-- /span3 -->
+        </div><!-- /row -->
+    </div><!-- /container -->
+
+</footer>
+
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 
 
 
 
-    </body>
+</body>
 </html>
