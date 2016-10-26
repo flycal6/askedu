@@ -5,37 +5,38 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
 
-	<title>ASK - Advanced Placement Courses</title>
+    <title>ASK - Advanced Placement Courses</title>
 
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="description" content="American School of Kuwait">
-	<meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="American School of Kuwait">
+    <meta name="viewport" content="width=device-width">
 
-	<!--[if IE 7]>
-	<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
-	<![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+    <![endif]-->
 
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/apcourse.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
 
-	<link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
 
-	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-	<script src="js/vendor/jquery-1.10.1.min.js"></script>
-	<script>
-		(function(window,$){
-			$(document).ready(function(){
-				var currentlocation = window.location.pathname.substr(1);
-				var $selected = $('#dynamic-sidebar').find('a[href="'+currentlocation+'"]');
-				$selected.addClass('active').parent().addClass('current');
-			});
-		})(window,$);
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="js/vendor/jquery-1.10.1.min.js"></script>
+    <script>
+        (function(window,$){
+            $(document).ready(function(){
+                var currentlocation = window.location.pathname.substr(1);
+                var $selected = $('#dynamic-sidebar').find('a[href="'+currentlocation+'"]');
+                $selected.addClass('active').parent().addClass('current');
+            });
+        })(window,$);
 
-		//put google analytics here
-	</script>
+        //put google analytics here
+    </script>
 
 </head>
 <body>
@@ -45,105 +46,581 @@
 <![endif]-->
 
 <header id="top-header">
-	<div class="container header-container box-padding-both">
-		<div class="row">
-			<div class="span12">
-				<div class="logo pull-left">
-					<a href="index.html"><img src="img/logo.png" alt="Anchorra Logo" /></a>
-				</div><!-- /logo -->
+    <div class="container header-container box-padding-both">
+        <div class="row">
+            <div class="span12">
+                <div class="logo pull-left">
+                    <a href="index.html"><img src="img/logo.png" alt="Anchorra Logo" /></a>
+                </div><!-- /logo -->
 
-				<!-- Navigation Area -->
-				<a class="nav-toggle pull-right"><i class="icon-align-justify"></i></a>
+                <!-- Navigation Area -->
+                <a class="nav-toggle pull-right"><i class="icon-align-justify"></i></a>
 
-				<nav id="mobile-navigation" class="clear"></nav>
+                <nav id="mobile-navigation" class="clear"></nav>
 
-				<nav id="navigation" class="pull-right">
-					<ul>
-						<li><a href="#">Discover ASK  <i class="icon-chevron-down"></i></a>
-							<ul>
-								<li><a href="about.html">About Us</a></li>
-								<li><a href="docs/school-profile.pdf" target="_blank">School Profile</a></li>
-								<li><a href="superintendent.html">Governance</a></li>
-								<li><a href="director-of-technology.html">Directors</a></li>
-								<li><a href="employment.html">Employment</a></li>
-							</ul>
-						</li>
+                <nav id="navigation" class="pull-right">
+                    <ul>
+                        <li><a href="#">Discover ASK  <i class="icon-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="docs/school-profile.pdf" target="_blank">School Profile</a></li>
+                                <li><a href="superintendent.html">Governance</a></li>
+                                <li><a href="director-of-technology.html">Directors</a></li>
+                                <li><a href="employment.html">Employment</a></li>
+                            </ul>
+                        </li>
 
-						<li><a href="#">Programs <i class="icon-chevron-down"></i></a>
-							<ul>
-								<li><a href="high-school.html">High School </a>
-									<ul>
-										<li><a href="docs/hs course booklet.pdf" target="_blank">Course Selection Booklet</a></li>
-										<li><a href="docs/hs handbook.pdf" target="_blank">HS Handbook</a></li>
-									</ul>
-								</li>
-								<li><a href="middle-school.html">Middle School </a>
-									<ul>
-										<li><a href="docs/ms course booklet.pdf" target="_blank">Course Selection Booklet</a></li>
-										<li><a href="docs/ms handbook.pdf" target="_blank">MS Handbook</a></li>
-									</ul>
-								</li>
-								<li><a href="elementary-school.html">Elementary School </a>
-									<ul>
-										<li><a href="docs/es handbook.pdf" target="_blank">ES Handbook</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
+                        <li><a href="#">Programs <i class="icon-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="high-school.html">High School </a>
+                                    <ul>
+                                        <li><a href="docs/hs course booklet.pdf" target="_blank">Course Selection Booklet</a></li>
+                                        <li><a href="docs/hs handbook.pdf" target="_blank">HS Handbook</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="middle-school.html">Middle School </a>
+                                    <ul>
+                                        <li><a href="docs/ms course booklet.pdf" target="_blank">Course Selection Booklet</a></li>
+                                        <li><a href="docs/ms handbook.pdf" target="_blank">MS Handbook</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="elementary-school.html">Elementary School </a>
+                                    <ul>
+                                        <li><a href="docs/es handbook.pdf" target="_blank">ES Handbook</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
 
-						<li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
 
-						<li><a href="http://mail.google.com/a/ask.edu.kw">ASK Mail</a></li>
+                        <li><a href="http://mail.google.com/a/ask.edu.kw">ASK Mail</a></li>
 
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
-			</div><!-- /span12 -->
-		</div><!-- /row -->
-	</div><!-- /container -->
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div><!-- /span12 -->
+        </div><!-- /row -->
+    </div><!-- /container -->
 </header><!-- /top-header -->
 
 <section id="wrapper">
-	<div class="container">
-		<div class="row">
-			<div id="content" class="span12 box-padding-both">
-				<div class="row" style="text-align:center">
-					<h2>AP Course Summer Assignments</h2>
-					<iframe src="https://drive.google.com/embeddedfolderview?id=0B46uZTIpUVVEfnpYRk9QWjdCUEkwUU5obEhkRVVVelpUWXNybFpQTldEUXh4SThiaXZCems#list" width="800" height="1050" frameborder="0"></iframe>
-				</div><!-- /row -->
-				<div class="mobile-hide">
-					<br>
-					<br>
-					<br>
-					<br>
-				</div>
-			</div><!-- /content -->
-		</div><!-- /row -->
-	</div><!-- /container -->
+    <div class="container">
+        <div class="row">
+            <aside id="sidebar" class="span3 box-padding-left">
+                <div class="menu-widget widget">
+                    <h5><a href="high-school.html" class="icon-user">High School</a></h5>
+                    <ul>
+                        <li><a href="high-school-academic-overview.html">Academic Overview</a></li>
+                        <li><a href="ap-summer-assignments.html" class="active">Advanced Placement Courses</a></li>
+                        <li><a href="high-school-college-acceptances.html">College Acceptances</a></li>
+                        <li><a href="http://askhighschooloffice.wordpress.com" target="_blank">News</a></li>
+                    </ul>
+                    <br>
+                    <!--<h5>Faculty by Department</h5>
+                    <ul id="dynamic-sidebar">
+                        <li><i class="icon-caret-right"></i><a href="high-school-arabic-faculty.html">Arabic & Religion</a></li>
+                        <li><i class="icon-caret-right"></i><a href="high-school-english-faculty.html">English</a></li>
+                        <li><i class="icon-caret-right"></i><a href="high-school-fine-arts-faculty.html">Fine Arts</a></li>
+                        <li><i class="icon-caret-right"></i><a href="high-school-technology-faculty.html">Information Technology</a></li>
+                        <li><i class="icon-caret-right"></i><a href="high-school-math-faculty.html">Math</a></li>
+                        <li><i class="icon-caret-right"></i><a href="high-school-pe-faculty.html">Physical Education</a></li>
+                        <li><i class="icon-caret-right"></i><a href="high-school-science-faculty.html">Science</a></li>
+                        <li><i class="icon-caret-right"></i><a href="high-school-social-science-faculty.html">Social Science</a></li>
+                        <li><i class="icon-caret-right"></i><a href="high-school-world-languages-faculty.html">World Languages</a></li>
+                    </ul>-->
+
+                </div><!-- /menu-widget -->
+
+            </aside><!-- /sidebar -->
+            <div id="content" class="span9 box-padding-right">
+                <div class="row" style="text-align:center">
+
+                    <h2>Advanced Placement Courses</h2>
+
+                    <div class="span9">
+                        <p>
+                            The American School of Kuwait offers 21 different AP courses and exams. In this section, you can
+                            download a brief course overview or a full description of each course and exam. Course overviews
+                            provide an introduction to AP courses and exams. For more detailed information about AP courses
+                            and exams, download the full course descriptions.<br>
+                            <br>
+
+                        <table border="0" width="100%" class="flat">
+                            <tr>
+                                <td bgcolor="#bed4df" style="text-align:center;" colspan="2">
+                                    <strong class="ttl">AP Capstone</strong><br>
+                                    <a href="http://lp.collegeboard.org/ap-capstone" title="AP Capstone">AP Capstone</a> is
+                                    a diploma program based on the two courses listed below. In order to offer these courses,
+                                    schools must apply through the AP Program to participate and teachers must attend mandatory
+                                    training.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP Seminar
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-capstone/ap-seminar-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-seminar-course-and-exam-description.pdf" target="_blank">Course and Exam Description</a>
+
+                                    </ul>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP Research
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-capstone/ap-research-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-research-course-and-exam-description.pdf" target="_blank">Course and Exam Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table><br>
+                        <table border="0" width="100%" class="flat">
+                            <tr>
+                                <td bgcolor="#bed4df" style="text-align:center" colspan="2">
+                                    <strong class="ttl">Arts</strong><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP Music Theory
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-music-theory-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-music-theory-course-description.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP Studio Art 2-D Design
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-studio-art-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-studio-arts-course-description.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP Studio Art 3-D Design
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-studio-art-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-studio-arts-course-description.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP Studio Art Drawing
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-studio-art-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-studio-arts-course-description.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table><br>
+                        <table border="0" width="100%" class="flat">
+                            <tr>
+                                <td bgcolor="#bed4df" style="text-align:center" colspan="2">
+                                    <strong>English</strong><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP English Language &amp; Composition
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-english-language-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-english-language-and-composition-course-description.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP English Literature &amp; Composition
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-english-literature-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-english-literature-and-composition-course-description.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table><br>
+                        <table border="0" width="100%" class="flat">
+                            <tr>
+                                <td bgcolor="#bed4df" style="text-align:center" colspan="2">
+                                    <strong>History &amp; Social Sciences</strong><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP Human Geography
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-human-geography-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-human-geography-course-description.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP Macroeconomics
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-macroeconomics-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-economics-course-description.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP Microeconomics
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-microeconomics-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-economics-course-description.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP Psychology
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-psychology-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-psychology-course-description-2014-15.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP United States History
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-united-states-history-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-us-history-course-and-exam-description.pdf" target="_blank">Full Course Description</a>
+
+                                        <li><a href="http://apcentral.collegeboard.com/apc/public/courses/231765.html" title="AP U.S. History">Guided Video Tour</a>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP World History
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-world-history-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-world-history-course-and-exam-description.pdf" target="_blank">Full Course Description</a>
+
+                                        <li>
+                                            <a href="http://apcentral.collegeboard.com/apc/public/courses/231723.html">Guided Video Tour</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table><br>
+                        <table border="0" width="100%" class="flat">
+                            <tr>
+                                <td bgcolor="#bed4df" style="text-align:center" colspan="2">
+                                    <strong>Mathematics &amp; Computer Science</strong><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP Calculus AB
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-calculus-ab-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-calculus-ab-and-bc-course-and-exam-description.pdf" target="_blank">Full Course Description</a>
+
+                                        <li>
+                                            <a href="http://apcentral.collegeboard.com/apc/public/courses/231722.html">Guided Video Tour</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP Computer Science A
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-computer-science-a-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-computer-science-a-course-description.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="50%">
+                                    AP Computer Science Principles
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-computer-science-principles-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-computer-science-principles-course-and-exam-description.pdf" target="_blank">Full Course Description</a>
+
+                                        <li><a href="http://apcentral.collegeboard.com/apc/public/courses/231569.html" title="AP Computer Science Principles">Guided Video Tour</a>
+                                    </ul>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td width="50%">
+                                    AP Statistics
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-statistics-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-statistics-course-description.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table><br>
+                        <table border="0" width="100%" class="flat">
+                            <tr>
+                                <td bgcolor="#bed4df" style="text-align:center" colspan="2">
+                                    <strong>Sciences</strong><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP Biology
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/13b-7589-AP-Biology-ADA-v0.1.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-biology-course-and-exam-description.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP Chemistry
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-chemistry-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-chemistry-course-and-exam-description.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP Environmental Science
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-environmental-science-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-environmental-science-course-description.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP Physics 1
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap_physics1_2page_course_overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-physics-1-2-course-and-exam-description.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP Physics 2
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap_physics2_2page_course_overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-physics-1-2-course-and-exam-description.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table><br>
+                        <table border="0" width="100%" class="flat">
+                            <tr>
+                                <td bgcolor="#bed4df" style="text-align:center" colspan="2">
+                                    <strong>World Languages &amp; Cultures</strong><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP French Language and Culture
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-french-language-and-culture-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-french-course-and-exam-description.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    AP Spanish Language and Culture
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-course-overviews/ap-spanish-language-and-culture-course-overview.pdf" target="_blank">Overview</a>
+
+                                        <li>
+                                            <a href="https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-spanish-language-and-culture-course-and-exam-description.pdf" target="_blank">Full Course Description</a>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table><br>
+                    </div>
+                </div><!-- /row -->
+                <div class="mobile-hide">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div><!-- /content -->
+        </div><!-- /row -->
+    </div><!-- /container -->
 </section><!-- /wrapper -->
 
 <footer id="main-footer">
-	<div class="container inner-footer box-padding-both">
-		<div class="row">
-			<div class="span3">
+    <div class="container inner-footer box-padding-both">
+        <div class="row">
+            <div class="span3">
 
-				<h5>About us</h5>
+                <h5>About us</h5>
 
-				<p>The American School of Kuwait was founded in 1964. It is a privately owned,
-					independent coeducational day school which offers a general academic curriculum
-					for students of all nationalities.</p>
+                <p>The American School of Kuwait was founded in 1964. It is a privately owned,
+                    independent coeducational day school which offers a general academic curriculum
+                    for students of all nationalities.</p>
 
-				<h5>get Social</h5>
+                <h5>get Social</h5>
 
-				<div class="footer-social">
-					<a href="#"><i class="icon-twitter"></i></a>
-					<a href="#"><i class="icon-facebook"></i></a>
-					<a href="#"><i class="icon-instagram"></i></a>
-				</div><!-- /top-social -->
+                <div class="footer-social">
+                    <a href="#"><i class="icon-twitter"></i></a>
+                    <a href="#"><i class="icon-facebook"></i></a>
+                    <a href="#"><i class="icon-instagram"></i></a>
+                </div><!-- /top-social -->
 
-			</div><!-- /span3 -->
-		</div><!-- /row -->
-	</div><!-- /container -->
+            </div><!-- /span3 -->
+        </div><!-- /row -->
+    </div><!-- /container -->
 </footer>
 
 <script src="js/bootstrap.min.js"></script>
