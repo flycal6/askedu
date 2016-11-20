@@ -152,7 +152,7 @@ the responsivity of the container is maintained and it does not break.*/
 body {
    font:       16px/1.5 'Sintony', sans-serif;
    word-wrap:  break-word;
-   word-break: break-word;
+   word-break: break-all;
    color:      #565353;
    background: #ecebe9;
    overflow-x: hidden;
@@ -746,7 +746,7 @@ a.nav-toggle:hover {
 
 #main-footer {
 	background:     #dfdfdf;
-	padding-bottom: 90px;
+	padding-bottom: 0;
 }
 
 /* 6.1 Subscribe-box Styles */
@@ -2387,7 +2387,7 @@ padding-bottom: 32px;
 	.category-dropdown {float: none!important;display: table;margin: 0 auto;}
 	.portfolio-container { padding-top: 115px!important; }
 	.portfolio-featured .overlay {display: none;}
-	#main-footer {padding-bottom: 30px;}
+	#main-footer {padding-bottom: 0;}
 	.service-icon i {padding-bottom: 50px;}
 	#sidebar {padding-top: 30px;}
 	.testimonials .slide-content h2 {font-size: 20px;line-height: 1.3;}

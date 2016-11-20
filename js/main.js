@@ -164,7 +164,7 @@ function sidebarMenuHover () {
         $('#sidebar div.menu-widget ul li a').on('mouseenter',function(){
             $(this).before('<i class="icon-caret-right"></i>');
             
-        })
+        });
 
         $('#sidebar div.menu-widget ul li a').on('mouseleave',function(){
             $(this).prev().remove();
@@ -202,7 +202,7 @@ function normalAccordion () {
 
     $('.normal-accordion .collapse').on('hide', function(){
         $(this).prev().find('i').attr('class', 'icon-plus'); //remove active state to button on close
-        $(this).prev().find('.accordion-toggle').removeClass('normal-accordion-active') //remove active state to button on close
+        $(this).prev().find('.accordion-toggle').removeClass('normal-accordion-active'); //remove active state to button on close
     });
 
 }
@@ -323,8 +323,7 @@ galleryImages.on('click',function(){
 
         else{
             largeImage.slideDown()
-        };
-
+    }
     largeImage.addClass('large-active');
     $(this).addClass('small-active');
 
