@@ -139,14 +139,15 @@ function contactFormAjax () {
             var input = $(this).find('input');
             var subs = $(this).find('button');
 
-            $.ajax({  
-              type: "POST",  
-              url: "contact-form.php",  
-              data: input,  
+            $.ajax({
+              type: "POST",
+              url: "contact-form.php",
+              data: input,
               success: function() {
                 $('form.contact-form p.success').fadeIn();
-                  
-            }  
+                $('form.contact-form div.control-group').fadeOut();
+
+            }
 
 
             });
