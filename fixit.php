@@ -156,7 +156,7 @@ if($_POST["cussubmitr"]!="")
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>American School of Kuwait Maintenance Form.</title>
-<link href="form/style.css" type="text/css" rel="stylesheet" />
+<link href="css/form/fixit-style.css" type="text/css" rel="stylesheet" />
 
 
  
