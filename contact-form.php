@@ -1,5 +1,5 @@
 <?php 
-$ToEmail = 'thomasb@ask.edu.kw'; // CHANGE YOUR EMAIL HERE
+$ToEmail = 'info@ask.edu.kw'; // CHANGE YOUR EMAIL HERE
 $EmailSubject = 'Site Contact Form'; 
 $mailheader = "From: ".$_POST["emailAddress"]."\r\n"; 
 $mailheader .= "Reply-To: ".$_POST["emailAddress"]."\r\n"; 
