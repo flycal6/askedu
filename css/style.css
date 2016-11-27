@@ -2479,6 +2479,13 @@ table {border-collapse: collapse;border-spacing: 0;}
 
 }
 
+@media (max-width: 768px) {
+    .featured-box {
+        margin-bottom: 10px;
+    }
+
+}
+
 @media (max-width: 750px) {
 
     #content {
