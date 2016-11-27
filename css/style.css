@@ -1884,7 +1884,7 @@ ul.children ul.children:last-child {
 }
 .featured-box {
     position:      relative;
-    margin-bottom: 26px;
+    margin-bottom: 70px;
 }
 .featured-box a{
     display: block;
@@ -2312,7 +2312,8 @@ form.contact-form button[type="submit"] {
     .download-widget span.date, .download-widget span.size {max-width: 100%; float: none; display: block; }
     .download-widget a { display: block;}
     .box-padding-both , .box-padding-right , .box-padding-left { padding: 0; }
-    .header-container , .inner-footer {padding:0 30px;}
+    .header-container {padding:0px 30px;}
+    .inner-footer {padding:45px 30px;}
     #sidebar {padding-left: 30px;}
     .page-heading-container {padding: 0 30px;}
     .subscribe-box { text-align: center; overflow: hidden; }
@@ -2466,11 +2467,17 @@ table {border-collapse: collapse;border-spacing: 0;}
 
 @media (max-width: 1199px) {
     .featured-box {
-        margin-bottom: 19px;
+        margin-bottom: 51px;
     }
 
 }
 
+@media (max-width: 979px) {
+    .featured-box {
+        margin-bottom: 45px;
+    }
+
+}
 
 @media (max-width: 750px) {
 
