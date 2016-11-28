@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
 <head>
 
     <title>ASK</title>
@@ -26,33 +30,40 @@
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="js/vendor/jquery-1.10.1.min.js"></script>
     <script>
-        (function(window,$){
-            $(document).ready(function(){
+        (function (window, $) {
+            $(document).ready(function () {
                 var currentlocation = window.location.pathname.substr(1);
-                var $selected = $('#dynamic-sidebar').find('a[href="'+currentlocation+'"]');
+                var $selected = $('#dynamic-sidebar').find('a[href="' + currentlocation + '"]');
                 $selected.addClass('active').parent().addClass('current');
             });
-        })(window,$);
+        })(window, $);
 
-        //put google analytics here
+        //        google analytics
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-84481320-1', 'auto');
+        ga('send', 'pageview');
+
     </script>
 
 </head>
 <body>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-84481320-1', 'auto');
-    ga('send', 'pageview');
-
-</script>
 
 
 <!--[if lt IE 7]>
-<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+    improve your experience.</p>
 <![endif]-->
 
 <header id="top-header">
@@ -60,7 +71,7 @@
         <div class="row">
             <div class="span12">
                 <div class="logo pull-left">
-                    <a href="index.html"><img src="img/logo.png" alt="Anchorra Logo" /></a>
+                    <a href="index.html"><img src="img/logo.png" alt="Anchorra Logo"/></a>
                 </div><!-- /logo -->
 
                 <!-- Navigation Area -->
@@ -70,7 +81,7 @@
 
                 <nav id="navigation" class="pull-right">
                     <ul>
-                        <li><a href="#">Discover ASK  <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <li><a href="#">Discover ASK <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                             <ul>
                                 <li><a href="about.html">About Us</a></li>
                                 <li><a href="docs/school-profile.pdf" target="_blank">School Profile</a></li>
@@ -84,13 +95,15 @@
                             <ul>
                                 <li><a href="high-school.html">High School </a>
                                     <ul>
-                                        <li><a href="docs/hs%20course%20booklet.pdf" target="_blank">Course Selection Booklet</a></li>
+                                        <li><a href="docs/hs%20course%20booklet.pdf" target="_blank">Course Selection
+                                            Booklet</a></li>
                                         <li><a href="docs/hs%20handbook.pdf" target="_blank">HS Handbook</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="middle-school.html">Middle School </a>
                                     <ul>
-                                        <li><a href="docs/ms%20course%20booklet.pdf" target="_blank">Course Selection Booklet</a></li>
+                                        <li><a href="docs/ms%20course%20booklet.pdf" target="_blank">Course Selection
+                                            Booklet</a></li>
                                         <li><a href="docs/ms%20handbook.pdf" target="_blank">MS Handbook</a></li>
                                     </ul>
                                 </li>
@@ -134,9 +147,9 @@
 
 
                             <!--<div class="active item">-->
-                                <!--<div class="slide-content">-->
-                                    <!--<img src="img/grease-poster.png" alt="play poster">-->
-                                <!--</div>&lt;!&ndash; /slide-content &ndash;&gt;-->
+                            <!--<div class="slide-content">-->
+                            <!--<img src="img/grease-poster.png" alt="play poster">-->
+                            <!--</div>&lt;!&ndash; /slide-content &ndash;&gt;-->
                             <!--</div>&lt;!&ndash; /item &ndash;&gt;-->
 
                             <div class="active item">
@@ -221,7 +234,9 @@
                         <div class="span12">
                             <div class="blue-hero-box clearfix">
                                 <h1 class="title">Practice Compassion - Make a Difference - Learn for Life</h1>
-                                <h2 class="subtitle">ASK inspires lifelong learners empowered to excel in American higher education and the global community as productive, compassionate citizens.</h2>
+                                <h2 class="subtitle">ASK inspires lifelong learners empowered to excel in American
+                                    higher education and the global community as productive, compassionate
+                                    citizens.</h2>
                             </div><!-- /span12 -->
                         </div><!-- /blue-hero-box -->
                     </div><!-- /row -->
@@ -238,7 +253,7 @@
                     <div class="span3 proj-box-wr">
                         <div class="project-box">
                             <a href="docs/Calendar%202016-2017.pdf" target="_blank">
-                                <img src="img/frontac.png" alt="calendar icon" />
+                                <img src="img/frontac.png" alt="calendar icon"/>
                                 <h4>ASK Calendar</h4></a>
                         </div>
                     </div><!-- /span3 -->
@@ -280,19 +295,19 @@
         <div class="row">
             <!--<div class="span3">-->
 
-                <h5>About us</h5>
+            <h5>About us</h5>
 
-                <p>The American School of Kuwait was founded in 1964. It is a privately owned,
-                    independent coeducational day school which offers a general academic curriculum
-                    for students of all nationalities.</p>
+            <p>The American School of Kuwait was founded in 1964. It is a privately owned,
+                independent coeducational day school which offers a general academic curriculum
+                for students of all nationalities.</p>
 
-                <!--<h5>get Social</h5>-->
+            <!--<h5>get Social</h5>-->
 
-                <!--<div class="footer-social">-->
-                    <!--<a href="#"><i class="icon-twitter"></i></a>-->
-                    <!--<a href="#"><i class="icon-facebook"></i></a>-->
-                    <!--<a href="#"><i class="icon-instagram"></i></a>-->
-                <!--</div>&lt;!&ndash; /top-social &ndash;&gt;-->
+            <!--<div class="footer-social">-->
+            <!--<a href="#"><i class="icon-twitter"></i></a>-->
+            <!--<a href="#"><i class="icon-facebook"></i></a>-->
+            <!--<a href="#"><i class="icon-instagram"></i></a>-->
+            <!--</div>&lt;!&ndash; /top-social &ndash;&gt;-->
 
             <!--</div>&lt;!&ndash; /span3 &ndash;&gt;-->
         </div><!-- /row -->
@@ -302,8 +317,6 @@
 
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
-
-
 
 
 </body>
