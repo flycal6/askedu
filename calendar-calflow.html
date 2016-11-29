@@ -66,22 +66,7 @@
         _gCalFlow_debug = true;
     </script>
     <script type="text/javascript" src="jquery-gcal-flow-3.0.1/jquery.gcal_flow.js"></script>
-    <script type="text/javascript">
-        var $ = jQuery;
-        $(function () {
-            $('#gcf-simple').gCalFlow({
-                calid: 'ask.edu.kw_2d36343231363737342d363134@resource.calendar.google.com'
-            });
-            $('#gcf-design').gCalFlow({
-                calid: 'ask.edu.kw_2d36343231363737342d363134@resource.calendar.google.com',
-                maxitem: 10
-            });
-            $('#gcf-custom-template').gCalFlow({
-                calid: 'ask.edu.kw_2d36343231363737342d363134@resource.calendar.google.com',
-                maxitem: 50
-            });
-        });
-    </script>
+
     <style type="text/css">
         /*h2 {*/
         /*clear: both;*/
@@ -319,5 +304,24 @@
     </div><!-- /container -->
 </section><!-- /wrapper -->
 
+<script type="text/javascript">
+    var $ = jQuery;
+    $(function () {
+        $('#gcf-simple').gCalFlow({
+            calid: 'ask.edu.kw_2d36343231363737342d363134@resource.calendar.google.com',
+            apikey: 'AIzaSyC8z-yio3AXTmOXlgt8zQam57uSD8tMObY'
+        });
+        $('#gcf-design').gCalFlow({
+            calid: 'ask.edu.kw_2d36343231363737342d363134@resource.calendar.google.com',
+            apikey: 'AIzaSyC8z-yio3AXTmOXlgt8zQam57uSD8tMObY',
+            maxitem: 10
+        });
+        $('#gcf-custom-template').gCalFlow({
+            calid: 'ask.edu.kw_2d36343231363737342d363134@resource.calendar.google.com',
+            apikey: 'AIzaSyC8z-yio3AXTmOXlgt8zQam57uSD8tMObY',
+            maxitem: 15
+        });
+    });
+</script>
 </body>
 </html>
