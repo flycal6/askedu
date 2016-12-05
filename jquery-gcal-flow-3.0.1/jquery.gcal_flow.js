@@ -57,6 +57,31 @@
 
         gCalFlow.prototype.template = $("<div class=\"gCalFlow\">\n  <div class=\"gcf-header-block\">\n    <div class=\"gcf-title-block\">\n      <span class=\"gcf-title\"></span>\n    </div>\n  </div>\n  <div class=\"gcf-item-container-block\">\n    <div class=\"gcf-item-block\">\n      <div class=\"gcf-item-header-block\">\n        <div class=\"gcf-item-date-block\">\n          [<span class=\"gcf-item-daterange\"></span>]\n        </div>\n        <div class=\"gcf-item-title-block\">\n          <strong class=\"gcf-item-title\"></strong>\n        </div>\n      </div>\n      <div class=\"gcf-item-body-block\">\n        <div class=\"gcf-item-description\">\n        </div>\n        <div class=\"gcf-item-location\">\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"gcf-last-update-block\">\n    LastUpdate: <span class=\"gcf-last-update\"></span>\n  </div>\n</div>");
 
+        var weekday = new Array();
+        weekday[0] = 'Sunday';
+        weekday[1] = 'Monday';
+        weekday[2] = 'Tuesday';
+        weekday[3] = 'Wednesday';
+        weekday[4] = 'Thursday';
+        weekday[5] = 'Friday';
+        weekday[6] = 'Saturday';
+
+
+        var month = new Array();
+        month[0] = "Jan";
+        month[1] = "Feb";
+        month[2] = "Mar";
+        month[3] = "Apr";
+        month[4] = "May";
+        month[5] = "Jun";
+        month[6] = "Jul";
+        month[7] = "Aug";
+        month[8] = "Sep";
+        month[9] = "Oct";
+        month[10] = "Nov";
+        month[11] = "Dec";
+
+
         gCalFlow.prototype.opts = {
             maxitem: 15,
             calid: null,
@@ -88,41 +113,21 @@
                     }
                     return Globalize.format(d, fmtstr);
                 } else {
-                    var weekday = new Array();
-                    weekday[0] = 'Sunday';
-                    weekday[1] = 'Monday';
-                    weekday[2] = 'Tuesday';
-                    weekday[3] = 'Wednesday';
-                    weekday[4] = 'Thursday';
-                    weekday[5] = 'Friday';
-                    weekday[6] = 'Saturday';
                     var weekday_str = weekday[d.getDay()];
-
-                    var month = new Array();
-                    month[0] = "Jan";
-                    month[1] = "Feb";
-                    month[2] = "Mar";
-                    month[3] = "Apr";
-                    month[4] = "May";
-                    month[5] = "Jun";
-                    month[6] = "Jul";
-                    month[7] = "Aug";
-                    month[8] = "Sep";
-                    month[9] = "Oct";
-                    month[10] = "Nov";
-                    month[11] = "Dec";
                     var month_str = month[d.getMonth()];
 
                     if (allday_p) {
-                        return "" + weekday_str + " " + month_str + " " + (pad_zero(d.getDate()));
+                        return "" + weekday_str + ", " + month_str + " " + (pad_zero(d.getDate()));
                     } else {
-                        return "" + weekday_str + " " + month_str + " " + (pad_zero(d.getDate())) + " " + (pad_zero(d.getHours())) + ":" + (pad_zero(d.getMinutes()));
+                        return "" + weekday_str + ", " + month_str + " " + (pad_zero(d.getDate())) + " " + (pad_zero(d.getHours())) + ":" + (pad_zero(d.getMinutes()));
                     }
                 }
             },
             daterange_formatter: function (sd, ed, allday_p) {
                 var endstr, ret;
                 ret = this.date_formatter(sd, allday_p);
+                var weekday_str = weekday[ed.getDay()];
+                var month_str = month[ed.getMonth()];
                 if (allday_p) {
                     ed = new Date(ed.getTime() - 86400 * 1000);
                 }
@@ -131,7 +136,7 @@
                     if ((typeof Globalize !== "undefined" && Globalize !== null) && (Globalize.format != null)) {
                         endstr += Globalize.format(ed, this.globalize_fmt_monthday);
                     } else {
-                        endstr += "" + (pad_zero(ed.getMonth() + 1)) + "-" + (pad_zero(ed.getDate()));
+                        endstr += "" + weekday_str + ", " + month_str + " " + (pad_zero(ed.getDate()));
                     }
                 }
                 if (!allday_p && (sd.getHours() !== ed.getHours() || sd.getMinutes() !== ed.getMinutes())) {
