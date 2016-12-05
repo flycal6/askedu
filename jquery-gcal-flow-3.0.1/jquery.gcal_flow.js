@@ -88,10 +88,35 @@
                     }
                     return Globalize.format(d, fmtstr);
                 } else {
+                    var weekday = new Array();
+                    weekday[0] = 'Sunday';
+                    weekday[1] = 'Monday';
+                    weekday[2] = 'Tuesday';
+                    weekday[3] = 'Wednesday';
+                    weekday[4] = 'Thursday';
+                    weekday[5] = 'Friday';
+                    weekday[6] = 'Saturday';
+                    var weekday_str = weekday[d.getDay()];
+
+                    var month = new Array();
+                    month[0] = "Jan";
+                    month[1] = "Feb";
+                    month[2] = "Mar";
+                    month[3] = "Apr";
+                    month[4] = "May";
+                    month[5] = "Jun";
+                    month[6] = "Jul";
+                    month[7] = "Aug";
+                    month[8] = "Sep";
+                    month[9] = "Oct";
+                    month[10] = "Nov";
+                    month[11] = "Dec";
+                    var month_str = month[d.getMonth()];
+
                     if (allday_p) {
-                        return "" + (d.getFullYear()) + "/" + (pad_zero(d.getMonth() + 1)) + "/" + (pad_zero(d.getDate()));
+                        return "" + weekday_str + " " + month_str + " " + (pad_zero(d.getDate()));
                     } else {
-                        return "" + (d.getFullYear()) + "/" + (pad_zero(d.getMonth() + 1)) + "/" + (pad_zero(d.getDate())) + " " + (pad_zero(d.getHours())) + ":" + (pad_zero(d.getMinutes()));
+                        return "" + weekday_str + " " + month_str + " " + (pad_zero(d.getDate())) + " " + (pad_zero(d.getHours())) + ":" + (pad_zero(d.getMinutes()));
                     }
                 }
             },
