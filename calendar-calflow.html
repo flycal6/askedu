@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/d633105fc1.js"></script>
 
-    <link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="js/vendor/jquery-1.10.1.min.js"></script>
@@ -57,6 +57,7 @@
 
     </script>
 
+    <link href="css/calendar.css" rel="stylesheet" type="text/css">
     <link href="jquery-gcal-flow-3.0.1/jquery.gcal_flow.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
@@ -79,28 +80,16 @@
         }
 
         #gcf-design .gcf-header-block {
-            background: #323e4e;
-            filter: none;
-        }
-
-        #gcf-design {
-            height: 400px;
-            width: 100%;
-            background: #F0FFEE;
+            background: #6a7d87;
             filter: none;
         }
 
         #gcf-custom-template .gcf-header-block {
-            background: #323e4e;
+            background: #bed4df;
             filter: none;
         }
 
-        #gcf-custom-template {
-            height: 400px;
-            width: 100%;
-            background: #F0FFEE;
-            filter: none;
-        }
+
     </style>
 </head>
 <body>
@@ -177,7 +166,7 @@
 
             <div id="content">
 
-                <div class="row" style="text-align:center; margin: auto">
+                <div class="row" style="text-align:center; margin: 0;">
 
                     <h2>2016/2017 Activities &amp; Athletics Calendar</h2>
 
@@ -192,7 +181,7 @@
                                 <div class="gcf-item-block">
                                     <div class="gcf-item-header-block">
                                         <div class="gcf-item-date-block">
-                                            [<span class="gcf-item-daterange"></span>]
+                                            <span class="gcf-item-daterange"></span>
                                         </div>
                                         <div class="gcf-item-title-block">
                                             <strong class="gcf-item-title"></strong>
@@ -223,7 +212,7 @@
                                 <div class="gcf-item-block">
                                     <div class="gcf-item-header-block">
                                         <div class="gcf-item-date-block">
-                                            [<span class="gcf-item-daterange"></span>]
+                                            <span class="gcf-item-daterange"></span>
                                         </div>
                                         <div class="gcf-item-title-block">
                                             <strong class="gcf-item-title"></strong>
@@ -254,10 +243,10 @@
                                 <div class="gcf-item-block">
                                     <div class="gcf-item-header-block">
                                         <div class="gcf-item-date-block">
-                                            [<span class="gcf-item-daterange"></span>]
+                                            <span class="gcf-item-daterange"></span>
                                         </div>
                                         <div class="gcf-item-title-block">
-                                            <strong class="gcf-item-title"></strong>
+                                            <div class="gcf-item-title"></div>
                                         </div>
                                     </div>
                                     <div class="gcf-item-body-block">
@@ -309,19 +298,25 @@
     $(function () {
         $('#gcf-simple').gCalFlow({
             calid: 'ask.edu.kw_2d36343231363737342d363134@resource.calendar.google.com',
-            apikey: 'AIzaSyC8z-yio3AXTmOXlgt8zQam57uSD8tMObY'
+            apikey: 'AIzaSyC8z-yio3AXTmOXlgt8zQam57uSD8tMObY',
+            link_item_title: false
         });
         $('#gcf-design').gCalFlow({
             calid: 'ask.edu.kw_2d36343231363737342d363134@resource.calendar.google.com',
             apikey: 'AIzaSyC8z-yio3AXTmOXlgt8zQam57uSD8tMObY',
-            maxitem: 10
+            maxitem: 10,
+            link_item_title: false
         });
         $('#gcf-custom-template').gCalFlow({
             calid: 'ask.edu.kw_2d36343231363737342d363134@resource.calendar.google.com',
             apikey: 'AIzaSyC8z-yio3AXTmOXlgt8zQam57uSD8tMObY',
-            maxitem: 15
+            maxitem: 15,
+            link_item_title: false
         });
     });
 </script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>

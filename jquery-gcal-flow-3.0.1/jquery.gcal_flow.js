@@ -89,9 +89,9 @@
                     return Globalize.format(d, fmtstr);
                 } else {
                     if (allday_p) {
-                        return "" + (d.getFullYear()) + "-" + (pad_zero(d.getMonth() + 1)) + "-" + (pad_zero(d.getDate()));
+                        return "" + (d.getFullYear()) + "/" + (pad_zero(d.getMonth() + 1)) + "/" + (pad_zero(d.getDate()));
                     } else {
-                        return "" + (d.getFullYear()) + "-" + (pad_zero(d.getMonth() + 1)) + "-" + (pad_zero(d.getDate())) + " " + (pad_zero(d.getHours())) + ":" + (pad_zero(d.getMinutes()));
+                        return "" + (d.getFullYear()) + "/" + (pad_zero(d.getMonth() + 1)) + "/" + (pad_zero(d.getDate())) + " " + (pad_zero(d.getHours())) + ":" + (pad_zero(d.getMinutes()));
                     }
                 }
             },
