@@ -2696,3 +2696,30 @@ table {border-collapse: collapse;border-spacing: 0;}
     margin-bottom: 0;
 }
 
+
+/* Dr Dennison Bio Page */
+.dennisonBioList {
+    margin-left: 485px;
+}
+.dennisonBioListItem {
+    padding: 5px;
+}
+
+@media (max-width: 1199px){
+    .dennisonBioList {
+        list-style-position: outside;
+        margin-left: 55px;
+    }
+}
+
+@media (max-width: 979px) {
+    .dennisonBioListItem {
+
+    }
+}
+
+@media (max-width: 768px) {
+    #ScottPic {
+        /*margin-right: 200px;*/
+    }
+}
