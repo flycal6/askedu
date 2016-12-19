@@ -2697,7 +2697,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 }
 
 
-/* Dr Dennison Bio Page */
+/* **************************** Dr Dennison Bio Page **********************************/
 .dennisonBioList {
     margin-left: 485px;
 }
@@ -2718,8 +2718,8 @@ table {border-collapse: collapse;border-spacing: 0;}
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 740px) and (max-width: 768px) {
     #ScottPic {
-        /*margin-right: 200px;*/
+        padding-right: 100px;
     }
 }
