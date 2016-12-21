@@ -2379,6 +2379,10 @@ form.contact-form button[type="submit"] {
     .box-left-index {
         margin-right: 1%;
     }
+
+    .bottom-index-row {
+        width: 100%;
+    }
 }
 
 
