@@ -2573,11 +2573,11 @@ table {border-collapse: collapse;border-spacing: 0;}
         width: 100%;
     }
 
-    .project-box img{
-        width: 35%;
-        float: left;
-        margin-right: 5%;
-    }
+    /*.project-box img{*/
+        /*width: 35%;*/
+        /*float: left;*/
+        /*margin-right: 5%;*/
+    /*}*/
 
     /*  .featured-box  {
         height:150px;
@@ -2688,6 +2688,32 @@ table {border-collapse: collapse;border-spacing: 0;}
     margin-bottom: 0;
 }
 
+/************* activities-calendar.html************************************************/
+@media (min-width: 1200px){
+	.calflows {
+		margin-left: 40px;
+	}
+}
+
+@media (min-width: 980px) and (max-width: 1199px){
+	.calflows {
+		margin-left: 33px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 979px){
+	.calflows {
+		margin-left: 34px;
+	}
+}
+
+.cal-page-title {
+	color: #6a7d87;
+}
+
+.cal-page-title a:hover {
+	color: #323e4e;
+}
 
 /* **************************** Dr Dennison Bio Page **********************************/
 .dennisonBioList {

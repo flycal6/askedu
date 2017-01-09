@@ -419,7 +419,7 @@ ul.horizontal-tabs li.active i.icon-caret-down{
 }
 .project-box:hover {
 	background:    #323e4e;
-	border-bottom: 3px solid #de3a31;  
+	/*border-bottom: 3px solid #de3a31;  */
 }
 .project-box:hover h4 a{
 	color: #ffffff;
