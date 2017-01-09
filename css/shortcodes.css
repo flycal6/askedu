@@ -382,7 +382,7 @@ ul.horizontal-tabs li.active i.icon-caret-down{
 
 
 .project-box {
-	border-bottom: 3px solid #ecebe9;
+	/*border-bottom: 3px solid #ecebe9;*/
 	position:      relative;
 }
 .project-box i.icon-caret-right {

@@ -1,12 +1,23 @@
+.cal-box {
+	/*display: -ms-flex;*/
+	display: -webkit-flex;
+	display: flex;
+	height: 100%;
+}
+
 #cal_left {
-	float: left;
-	width: 49%;
-	margin: 0;
+	float:            left;
+	width:            49%;
+	height:           100%;
+	margin:           0;
+	align-items: stretch;
 }
 
 #cal_right {
-	width: 49%;
-	float: right;
+	width:            49%;
+	height:           100%;
+	float:            right;
+	align-items: stretch;
 }
 
 #bottom-row-1 {
@@ -17,4 +28,37 @@
 	#bottom-row-2 {
 		float: right;
 	}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	.box-right-index {
+		margin-left: 1%;
+	}
+
+	.box-left-index {
+		margin-right: 1%;
+	}
+
+	.bottom-index-row {
+		width: 100%;
+	}
+}
+@media (max-width: 535px){
+
+	.cal-box img {
+		width: 100%;
+		/*float: left;*/
+		margin-right: 5%;
+	}
+
+	#bottom-row-1 {
+		float: none;
+	}
+
+    #cal-title {
+	    text-align: right;
+	    padding-right: 20px;
+    }
 }
