@@ -1907,7 +1907,7 @@ ul.children ul.children:last-child {
     background: rgb(50, 62, 78);
     background: rgba(50, 62, 78, 0.83);
     color:      #ffffff!important;
-    padding:    34% 80px 0 30px;
+    padding:    25% 50px 0 30px;
 }
 .featured-box-hover i.icon-align-justify {
     font-size: 30px;
