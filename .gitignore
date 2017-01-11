@@ -58,3 +58,4 @@ fabric.properties
 
 /img/*
 /sendmail.php
+/node_modules/
