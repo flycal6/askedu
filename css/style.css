@@ -709,10 +709,12 @@ ul.horizontal-tabs {
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   box-sizing: border-box; }
   *:before, *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     box-sizing: border-box; }
 
 .transparent-border {
@@ -848,24 +850,24 @@ h6 {
 /* 2.2 Styles for the boxed layout */
 .box-padding-left {
   padding-left: 50px;
-  box-sizing: content-box;
-  -o-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box; }
+  -ms-box-sizing: content-box;
+  box-sizing: content-box; }
 
 .box-padding-right {
   padding-right: 50px;
-  box-sizing: content-box;
-  -o-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box; }
+  -ms-box-sizing: content-box;
+  box-sizing: content-box; }
 
 .box-padding-both {
   padding: 0 50px 0 50px;
-  box-sizing: content-box;
-  -o-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box; }
+  -ms-box-sizing: content-box;
+  box-sizing: content-box; }
 
 /* 2.3 Custom Columns */
 .col1 {
@@ -1963,6 +1965,9 @@ span.footer-subscribe-submit {
   float: left;
   margin-left: 3%;
   padding-top: 21.7%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
   overflow: hidden; }
@@ -2944,6 +2949,8 @@ dfn {
 
 hr {
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -ms-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -3023,12 +3030,15 @@ button[disabled], html input[disabled] {
   cursor: default; }
 
 input[type="checkbox"], input[type="radio"] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0; }
 input[type="search"] {
-  -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
+  -ms-box-sizing: content-box;
   box-sizing: content-box; }
   input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none; }
