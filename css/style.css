@@ -92,6 +92,9 @@ body {
 .project-box img {
   width: 100%; }
 
+.featured-box-hover-text {
+  text-align: center; }
+
 /*THIS IS THE SHORTCODES CSS FILE*/
 /* ==========================================================================
    Faq Accordion Styles
