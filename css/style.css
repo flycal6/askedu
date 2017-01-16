@@ -734,8 +734,12 @@ div.carousel.pull-right {
 /*The following code is a fix for the wrapper region which contains sidebar and content bar what is done here is the width
 of the container inside the wrapper element is increased by a 100px so as to add a padding of 50px on each side this way
 the responsivity of the container is maintained and it does not break.*/
+#wrapper {
+  flex: 1; }
+
 #wrapper > .container {
-  background: #ffffff; }
+  background: #ffffff;
+  flex: 1; }
 
 @media (min-width: 1200px) {
   #wrapper .container {
@@ -770,6 +774,7 @@ the responsivity of the container is maintained and it does not break.*/
 
 html {
   overflow-x: hidden;
+  height: 100%;
   /* Ver 1.1 */ }
 
 body {
@@ -780,7 +785,10 @@ body {
   color: #565353;
   background: #ecebe9;
   overflow-x: hidden;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column; }
 
 ::selection, ::-moz-selection {
   background: #323e4e;
@@ -806,7 +814,7 @@ a {
   color: inherit;
   text-decoration: none; }
   a:hover {
-    color: #de3a31;
+    color: #323e4e;
     text-decoration: underline; }
 
 .red {
@@ -821,7 +829,7 @@ img.pull-right {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin-bottom: 20px;
-  color: #000000;
+  color: #2d3032;
   margin-top: 0; }
 
 h1 {
@@ -1064,7 +1072,7 @@ ul.arrow li {
         width: 150px;
         margin: 0 15px; }
       #navigation ul ul li:hover {
-        background: #de3a31; }
+        background: #bbab95; }
         #navigation ul ul li:hover a {
           color: #ffffff; }
     #navigation ul ul ul {
@@ -1140,7 +1148,7 @@ a.nav-toggle {
       border-bottom: 1px solid #4e6077;
       display: block; }
       #mobile-navigation ul li a:hover, #mobile-navigation ul li a:active {
-        background: #de3a31;
+        background: #bbab95;
         color: #ffffff; }
   #mobile-navigation > ul > li > ul > li a {
     padding-left: 25px; }
@@ -2667,9 +2675,9 @@ form.contact-form button[type="submit"] {
     display: table;
     margin: 20px auto 0; }
 
-  .inner-footer .span3 {
-    margin-top: 40px; }
-
+  /*  .inner-footer .span3 {
+      margin-top: 40px;
+    }*/
   .info-box {
     margin-bottom: 20px; }
 

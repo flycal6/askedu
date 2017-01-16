@@ -119,8 +119,16 @@ div.carousel {
 of the container inside the wrapper element is increased by a 100px so as to add a padding of 50px on each side this way
 the responsivity of the container is maintained and it does not break.*/
 
+// Push footer to bottom of screen
+#wrapper {
+    //min-height: calc(100vh - 300px);
+  flex: 1;
+  }
+
 #wrapper > .container {
   background: #ffffff;
+  flex: 1;
+  //min-height: calc(100vh - 300px);  // Extend containter background color entire height of wrapper, to footer
 }
 
 @media (min-width: 1200px) {
@@ -170,6 +178,7 @@ the responsivity of the container is maintained and it does not break.*/
 
 html {
   overflow-x: hidden;
+  height: 100%;
 
   /* Ver 1.1 */
 }
@@ -183,6 +192,9 @@ body {
   background: #ecebe9;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 ::selection, ::-moz-selection {
@@ -216,7 +228,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: #de3a31;
+    color: $hsblue;
     text-decoration: underline;
   }
 }
@@ -240,7 +252,7 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin-bottom: 20px;
-  color: #000000;
+  color: $h5Text;
   margin-top: 0;
 }
 
@@ -561,7 +573,7 @@ ul.arrow li {
       }
 
       &:hover {
-        background: #de3a31;
+        background: $camel;
 
         a {
           color: #ffffff;
@@ -661,7 +673,7 @@ a.nav-toggle {
       color: #afbbc1;
       text-decoration: none;
       &:hover, &:active {
-        background: #de3a31;
+        background: $camel;
         color: #ffffff;
       }
 
@@ -2887,9 +2899,9 @@ form.contact-form {
     margin: 20px auto 0;
   }
 
-  .inner-footer .span3 {
+/*  .inner-footer .span3 {
     margin-top: 40px;
-  }
+  }*/
 
   .info-box {
     margin-bottom: 20px;
