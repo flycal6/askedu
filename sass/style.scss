@@ -128,6 +128,7 @@ the responsivity of the container is maintained and it does not break.*/
 #wrapper > .container {
   background: #ffffff;
   flex: 1;
+  min-height: 100%;
   //min-height: calc(100vh - 300px);  // Extend containter background color entire height of wrapper, to footer
 }
 
@@ -192,6 +193,7 @@ body {
   background: #ecebe9;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  // Lines below used for sticky footer
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -367,6 +369,16 @@ blockquote {
   border: 0;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  blockquote {
+    background: $offwhite url('../img/blockquote-icon.png') no-repeat 10px 33px;
+    background-size: 35px;
+    padding-left: 55px;
+    padding-right: 35px;
+  }
+
 }
 
 cite {
@@ -3689,7 +3701,7 @@ table {
 
 @media (min-width: 740px) and (max-width: 768px) {
   #ScottPic {
-    padding-right: 100px;
+    padding-right: 100px;  // push text down on iPad protrait
   }
 }
 
@@ -3697,4 +3709,13 @@ table {
   #ScottPic {
     margin-bottom: 10px;
   }
+}
+@media (min-width: 480px) and (max-width: 651px) {
+  #ScottPic {
+    float: none;
+  }
+}
+
+.stop-wrap {
+  white-space: nowrap;
 }
