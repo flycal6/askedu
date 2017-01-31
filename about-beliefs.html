@@ -35,13 +35,14 @@
         (function (window, $) {
             $(document).ready(function () {
                 var currentlocation = window.location.pathname.substr(1);
-                var $selected = $('#dynamic-sidebar a[href="' + currentlocation + '"]');
+                var $selected = $('#dynamic-sidebar').find('a[href="' + currentlocation + '"]');
                 $selected.addClass('active').parent().addClass('current');
             });
         })(window, $);
 
         //put google analytics here
     </script>
+
 </head>
 
 <body>
@@ -121,17 +122,6 @@
 
             <aside id="sidebar" class="span3 box-padding-left">
 
-                <!--    <div class="download-widget widget">
-
-                        <img src="img/pdf-icon.png" alt="PDF icon">
-                        <a href="">Download Brochure</a>
-                        <span class="date">September 2014</span>
-                        <span class="size">PDF Document</span>
-                        <div class="clearfix"></div>
-
-                    </div>-->
-                <!-- /download-widget -->
-
                 <div class="menu-widget widget">
                     <h5>About Us</h5>
                     <ul id="dynamic-sidebar">
@@ -157,7 +147,57 @@
 
                 <h2 class="col8">ASK's School Beliefs</h2>
                 <hr>
-                <ol>
+
+                <!-- This is mtree list -->
+                <ul class=mtree>
+                    <li><a href="#">Partnership</a>
+                        <ul>
+                            <li><a href="#">A partnership among families, teachers, and students is essential for successful learning.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Success</a>
+                        <ul>
+                            <li><a href="#">Successful students require a safe, supportive, and rigorous learning environment.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Education</a>
+                        <ul>
+                            <li><a href="#">Education encompasses the development of the whole individual: academic, aesthetic, creative, social, physical, and emotional.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Learning</a>
+                        <ul>
+                            <li><a href="#">Learning empowers the individual and expands options throughout life.</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Engagement</a>
+                        <ul>
+                            <li><a href="#">Students’ active engagement in their own learning is a key to their ongoing success.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Diversity</a>
+                        <ul>
+                            <li><a href="#">The diversity of our school community is one of our greatest assets.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Enrichment</a>
+                        <ul>
+                            <li><a href="#">An enriching school experience encourages independent thinking, fosters self-esteem, and builds self-confidence.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Innovation</a>
+                        <ul>
+                            <li><a href="#">Innovative technologies and methodologies support problem-based learning.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Individual</a>
+                        <ul>
+                            <li><a href="#">Every individual has inherent worth.</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--<ul>
                     <li>A partnership among families, teachers, and students is essential for successful learning.</li>
                     <li>Successful students require a safe, supportive, and rigorous learning environment.</li>
                     <li>Education encompasses the development of the whole individual: academic, aesthetic, creative,
@@ -171,7 +211,7 @@
                     </li>
                     <li>Innovative technologies and methodologies support problem-based learning.</li>
                     <li>Every individual has inherent worth.</li>
-                </ol>
+                </ul>-->
 
                 <br>
                 <blockquote>We have a truly international student and teacher community and that makes us dynamic and
