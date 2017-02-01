@@ -3250,9 +3250,7 @@ table {
   -moz-columns: 2;
   -webkit-columns: 2;
   columns: 2;
-  list-style: none;
-  margin-right: 20px;
-  padding-left: 35px; }
+  list-style: none; }
   .two-col-list .small-item {
     font-size: 1em; }
 
