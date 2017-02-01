@@ -3737,6 +3737,12 @@ table {
   }
 }
 
+@media (min-width: 1200px) {
+  .salary-list {
+    padding-left: 30px;
+  }
+}
+
 .other-cash-list {
   list-style: none;
 }
