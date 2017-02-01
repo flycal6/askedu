@@ -3251,14 +3251,16 @@ table {
   -webkit-columns: 2;
   columns: 2;
   list-style: none; }
-  .two-col-list .small-item {
-    font-size: 1em; }
 
 @media (min-width: 768px) {
   .salary-list {
     padding-left: 20px; } }
 .other-cash-list {
   list-style: none; }
+
+.small-item {
+  font-size: 1em;
+  padding-bottom: 10px; }
 
 @media (min-width: 768px) {
   .other-cash-list {
@@ -3281,5 +3283,7 @@ a {
     padding: 15px;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch; } }
+.asterisk {
+  color: red; }
 
 /*# sourceMappingURL=style.css.map */

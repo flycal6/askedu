@@ -3729,10 +3729,6 @@ table {
   @include columns(2);
   //@include column-gap(50px);
   list-style: none;
-
-    .small-item {
-      font-size: 1em;
-    }
 }
 
 @media (min-width: 768px) {
@@ -3744,6 +3740,12 @@ table {
 .other-cash-list {
   list-style: none;
 }
+
+.small-item {
+  font-size: 1em;
+  padding-bottom: 10px;
+}
+
 @media (min-width: 768px) {
   .other-cash-list {
     padding-left: 20px;
@@ -3770,4 +3772,8 @@ a {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
+}
+
+.asterisk  {
+  color: red;
 }
