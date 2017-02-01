@@ -3254,4 +3254,8 @@ table {
   .two-col-list .small-item {
     font-size: 1em; }
 
+@media (min-width: 768px) {
+  .salary-list {
+    padding-left: 20px; } }
+
 /*# sourceMappingURL=style.css.map */
