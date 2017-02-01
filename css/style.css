@@ -3246,4 +3246,14 @@ table {
   margin-left: 0;
   padding-left: 50px; }
 
+.two-col-list {
+  -moz-columns: 2;
+  -webkit-columns: 2;
+  columns: 2;
+  list-style: none;
+  margin-right: 20px;
+  padding-left: 35px; }
+  .two-col-list .small-item {
+    font-size: 1em; }
+
 /*# sourceMappingURL=style.css.map */
