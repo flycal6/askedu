@@ -3257,5 +3257,11 @@ table {
 @media (min-width: 768px) {
   .salary-list {
     padding-left: 20px; } }
+.other-cash-list {
+  list-style: none; }
+
+@media (min-width: 768px) {
+  .other-cash-list {
+    padding-left: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
