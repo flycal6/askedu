@@ -16,3 +16,9 @@
   -webkit-column-gap: $column-gap;
   column-gap: $column-gap;
 }
+
+@mixin column-width($column-width) {
+  -moz-column-width: $column-width;
+  -webkit-column-width: $column-width;
+  column-width: $column-width;
+}

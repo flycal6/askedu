@@ -3731,6 +3731,11 @@ table {
   list-style: none;
 }
 
+.two-col-list-sp {
+  @extend .two-col-list;
+  @include column-width(200px);
+}
+
 @media (min-width: 768px) {
   .salary-list {
     padding-left: 20px;
@@ -3786,4 +3791,39 @@ a {
 
 .chrome-salary-fix {
   margin-bottom: 0;
+}
+
+.sp-admin-list {
+  list-style: none;
+  @media (max-width: 767px) {
+    li {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.sp-list-headers-h4 {
+  margin-bottom: 3px;
+  color: $msgrey;
+}
+
+.sp-list-headers-h5 {
+  text-align: center;
+  color: $msgrey;
+  font-weight: bold;
+}
+
+#head-split {
+  margin: 0;
+  height: 3px;
+  background-color: $h5Text;
+}
+
+.sp-table {
+  text-align: center;
+  width: 100%;
+
+  th {
+    border-bottom: 1px solid #444444;
+  }
 }
