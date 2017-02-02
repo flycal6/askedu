@@ -1,3 +1,30 @@
+Skip to content
+This repository
+
+Pull requests
+Issues
+Gist
+
+@flycal6
+
+1
+0
+
+0
+
+flycal6/askedu
+Code
+Issues 0
+Pull requests 0
+Projects 0
+Wiki
+Pulse
+Graphs
+Settings
+askedu/salary.html
+770864f 17 hours ago
+@flycal6 flycal6 chrome fix for two column css
+331 lines (285 sloc) 17.3 KB
 <!DOCTYPE html>
 <!--[if lt IE 7]>
 <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -37,7 +64,6 @@
                 $selected.addClass('active').parent().addClass('current');
             });
         })(window, $);
-
         //put google analytics here
     </script>
 </head>
@@ -225,90 +251,90 @@
 
                         </ul>
 
+                        <!-- Exception Modal -->
+                        <div id="exception-modal" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Exception</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>In case where the contracted teacher is a female teacher with an accompanying
+                                            male spouse, by Kuwaiti law neither she nor the school may sponsor him for
+                                            residency. In this case, it will be necessary for the husband to enter and
+                                            stay in Kuwait on a Visitor’s Visa. This will require him to leave Kuwait as
+                                            each visitor visa expires and reenter the country as a visitor. All costs
+                                            related to doing this are the responsibility of the teacher.</p>
+                                        <p><strong>Dependent:</strong> New born child or an ASK enrolled student or an
+                                            unemployed spouse
+                                            less than 60 years old. In all listed cases the dependent must be residing
+                                            in Kuwait.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--Leave Modal-->
+                        <div id="leave-modal" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Recruiting Leave</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Up to 4 days leave for attending a recruiting fair for non-returning faculty
+                                            upon approval of the Superintendent. </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--Baggage Modal-->
+                        <div id="baggage-modal" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Baggage Allowance</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong> Baggage Allowance to Kuwait:</strong> 200KD per single, 300KD per
+                                            married couple</p>
+                                        <p><strong> Baggage Allowance from Kuwait:</strong> 200KD per single, 300KD per
+                                            married couple. Receipts required and completion of a two year contract</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div><!-- /span9 -->
                 </div><!-- /row -->
             </div><!-- /content -->
         </div><!-- /row -->
     </div><!-- /container -->
 </section><!-- /wrapper -->
-
-<!-- Exception Modal -->
-<div id="exception-modal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Residency Exception</h4>
-            </div>
-            <div class="modal-body">
-                <p>In case where the contracted teacher is a female teacher with an accompanying
-                    male spouse, by Kuwaiti law neither she nor the school may sponsor him for
-                    residency. In this case, it will be necessary for the husband to enter and
-                    stay in Kuwait on a Visitor’s Visa. This will require him to leave Kuwait as
-                    each visitor visa expires and reenter the country as a visitor. All costs
-                    related to doing this are the responsibility of the teacher.</p>
-                <p><strong>Dependent:</strong> New born child or an ASK enrolled student or an
-                    unemployed spouse
-                    less than 60 years old. In all listed cases the dependent must be residing
-                    in Kuwait.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close
-                </button>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<!--Leave Modal-->
-<div id="leave-modal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Recruiting Leave</h4>
-            </div>
-            <div class="modal-body">
-                <p>Up to 4 days leave for attending a recruiting fair for non-returning faculty
-                    upon approval of the Superintendent. </p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close
-                </button>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<!--Baggage Modal-->
-<div id="baggage-modal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Baggage Allowance</h4>
-            </div>
-            <div class="modal-body">
-                <p><strong> Baggage Allowance to Kuwait:</strong> 200KD per single, 300KD per
-                    married couple</p>
-                <p><strong> Baggage Allowance from Kuwait:</strong> 200KD per single, 300KD per
-                    married couple. Receipts required and completion of a two year contract</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
 
 <footer id="main-footer">
 
@@ -330,3 +356,8 @@
 
 </body>
 </html>
+
+Contact GitHub API Training Shop Blog About
+
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
+
