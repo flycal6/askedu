@@ -3257,6 +3257,16 @@ table {
   -webkit-column-width: 200px;
   column-width: 200px; }
 
+.three-col-list-sp {
+  -moz-columns: 3;
+  -webkit-columns: 3;
+  columns: 3;
+  -moz-column-width: 200px;
+  -webkit-column-width: 200px;
+  column-width: 200px; }
+  .three-col-list-sp li {
+    list-style: none; }
+
 @media (min-width: 768px) {
   .salary-list {
     padding-left: 20px; } }

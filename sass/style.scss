@@ -3736,6 +3736,14 @@ table {
   @include column-width(200px);
 }
 
+.three-col-list-sp {
+  @include columns(3);
+  @include column-width(200px);
+  li {
+    list-style: none;
+  }
+}
+
 @media (min-width: 768px) {
   .salary-list {
     padding-left: 20px;
