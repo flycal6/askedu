@@ -34,7 +34,7 @@
         (function (window, $) {
             $(document).ready(function () {
                 var currentlocation = window.location.pathname.substr(1);
-                var $selected = $('#dynamic-sidebar a[href="' + currentlocation + '"]');
+                var $selected = $('#dynamic-sidebar').find('a[href="' + currentlocation + '"]');
                 $selected.addClass('active').parent().addClass('current');
             });
         })(window, $);
@@ -125,16 +125,13 @@
     <div class="container">
         <div class="row">
             <aside id="sidebar" class="span3 box-padding-left">
-
                 <div class="menu-widget widget">
-
                     <h5>About Us</h5>
-
                     <ul id="dynamic-sidebar">
-                        <li><i class="icon-caret-right"></i><a href="about.html" class="active">History</a></li>
+                        <li><i class="icon-caret-right"></i><a href="about.html">History</a></li>
                         <li><i class="icon-caret-right"></i><a href="about-mission.html">Mission</a></li>
                         <li><i class="icon-caret-right"></i><a href="about-beliefs.html">Beliefs</a></li>
-                        <li><a href="school-profile.html">School Profile</a></li>
+                        <li><a href="school-profile.html" class="active">School Profile</a></li>
                         <li><i class="icon-caret-right"></i><a href="about-profile-of-graduates.html">Profile of
                             Graduates</a></li>
                     </ul>
