@@ -22,7 +22,7 @@
     <![endif]-->
 
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_v1.0.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
 
@@ -34,7 +34,7 @@
         (function (window, $) {
             $(document).ready(function () {
                 var currentlocation = window.location.pathname.substr(1);
-                var $selected = $('#dynamic-sidebar a[href="' + currentlocation + '"]');
+                var $selected = $('#dynamic-sidebar').find('a[href="' + currentlocation + '"]');
                 $selected.addClass('active').parent().addClass('current');
             });
         })(window, $);
