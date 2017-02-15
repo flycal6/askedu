@@ -36,11 +36,11 @@
 }
 
 .gCalFlow .gcf-last-update-block {
-    font-size: 76%;
+    font-size: 60%;
     text-align: right;
     bottom: 0;
     right: 0;
-    padding-right: 4px;
+    padding-right: 20px;
     position: absolute;
 }
 
