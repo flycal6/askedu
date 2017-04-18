@@ -8,6 +8,7 @@
 <html class="no-js lt-ie9"> <![endif]-->
 <!--[if IE 9]>
 <html class="no-js"><![endif]-->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,9 +18,8 @@
 
     <title>American School of Kuwait</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
     <link href="css/summer-style.css" rel="stylesheet">
@@ -29,11 +29,11 @@
 
     <script>
         //        google analytics
-        (function (i, s, o, g, r, a, m) {
+        (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
             a = s.createElement(o),
                 m = s.getElementsByTagName(o)[0];
             a.async = 1;
@@ -43,7 +43,6 @@
 
         ga('create', 'UA-84481320-1', 'auto');
         ga('send', 'pageview');
-
     </script>
 
     <style>
@@ -66,7 +65,7 @@
             padding: 0;
         }
 
-        .dropdown-item{
+        .dropdown-item {
             background-color: #323e4e;
             color: rgba(255, 255, 255, 0.5);
         }
@@ -83,88 +82,132 @@
 </head>
 
 <body>
-<!--[if lt IE 7]>
+    <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
     improve your experience.</p>
 <![endif]-->
 
-<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
-            aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a href="#"><img src="img/logo.png" alt="School Logo"/></a>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a href="#"><img src="img/logo.png" alt="School Logo" /></a>
+            </div>
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://www.ask.edu.kw/discover" id="dropdown-discover" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">Discover ASK</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown-discover">
-                    <a class="dropdown-item" href="about.html">About Us</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="docs/school-profile.pdf" target="_blank">School Profile</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="superintendent.html">Governance</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="director-of-technology.html">Directors</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="employment.html">Employment</a>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-discover">
+                            <ul class="dropdown-menu nav navbar-nav navbar-right">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="docs/school-profile.pdf" target="_blank">School Profile</a></li>
+                                <li><a href="superintendent.html">Governance</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="director-of-technology.html">Directors</a></li>
+                                <li><a href="employment.html">Employment</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://www.ask.edu.kw/programs" id="dropdown-programs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Programs</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-programs">
+                            <a class="dropdown-item" href="high-school.html">High School</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="middle-school.html">Middle School</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="elementary-school.html">Elementary School</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admissions.html">Admissions<span class="sr-only">About ASK</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://mail.google.com/a/ask.edu.kw">ASK Mail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
                 </div>
-            </li>
+    </nav>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://www.ask.edu.kw/programs" id="dropdown-programs" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">Programs</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown-programs">
-                    <a class="dropdown-item" href="high-school.html">High School</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="middle-school.html">Middle School</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="elementary-school.html">Elementary School</a>
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Image Carousel
+            ==================================================================================== -->
+            <div class="col-sm-9">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/art-show-web.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="img/spring-concert.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="img/spring-concert.jpg" alt="...">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="admissions.html">Admissions<span class="sr-only">About ASK</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="http://mail.google.com/a/ask.edu.kw">ASK Mail</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
+            </div>
 
-        </ul>
+            <div class="col-sm-3">
+                <a class="thumbnail" href="https://www.stu.ask.edu.kw/moodle/login/index.php" target="_blank">
+                    <img class="card-img" src="img/moodle.png" alt=""></a>
+                <a class="thumbnail" href="activities-calendar.html" target="_blank">
+                    <img class="card-img" src="img/activities-calendar-icon.png" alt=""></a>
+            </div>
+
+        </div>
+        <!-- /.row -->
     </div>
-</nav>
-
-<div class="container">
-
-    <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a
-            mostly barebones HTML document.</p>
-    </div>
-
-</div><!-- /.container -->
+    <!-- /.container -->
 
 
-<!-- Bootstrap core JavaScript
+    <!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-        crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-        crossorigin="anonymous"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
 </body>
+
 </html>
