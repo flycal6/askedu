@@ -6,7 +6,9 @@
 <!--[if IE 8]>
 <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
+<html class="no-js">
+<!--<![endif]-->
+
 <head>
     <title>ASK</title>
 
@@ -30,8 +32,8 @@
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="js/vendor/jquery-1.10.1.min.js"></script>
     <script>
-        (function (window, $) {
-            $(document).ready(function () {
+        (function(window, $) {
+            $(document).ready(function() {
                 var currentlocation = window.location.pathname.substr(1);
                 var $selected = $('#dynamic-sidebar').find('a[href="' + currentlocation + '"]');
                 $selected.addClass('active').parent().addClass('current');
@@ -39,13 +41,13 @@
         })(window, $);
 
         //        google analytics
-        (function (i, s, o, g, r, a, m) {
+        (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                        (i[r].q = i[r].q || []).push(arguments)
-                    }, i[r].l = 1 * new Date();
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
             a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
+                m = s.getElementsByTagName(o)[0];
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
@@ -53,286 +55,331 @@
 
         ga('create', 'UA-84481320-1', 'auto');
         ga('send', 'pageview');
-
     </script>
 
 </head>
+
 <body>
 
 
-<!--[if lt IE 7]>
+    <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
     improve your experience.</p>
 <![endif]-->
 
-<header id="top-header">
-    <div class="container header-container box-padding-both">
-        <div class="row">
-            <div class="span12">
-                <div class="logo pull-left">
-                    <a href="index.html"><img src="img/logo.png" alt="Anchorra Logo"/></a>
-                </div><!-- /logo -->
+    <header id="top-header">
+        <div class="container header-container box-padding-both">
+            <div class="row">
+                <div class="span12">
+                    <div class="logo pull-left">
+                        <a href="index.html"><img src="img/logo.png" alt="Anchorra Logo" /></a>
+                    </div>
+                    <!-- /logo -->
 
-                <!-- Navigation Area -->
-                <a class="nav-toggle pull-right"><i class="icon-align-justify"></i></a>
+                    <!-- Navigation Area -->
+                    <a class="nav-toggle pull-right"><i class="icon-align-justify"></i></a>
 
-                <nav id="mobile-navigation" class="clear"></nav>
+                    <nav id="mobile-navigation" class="clear"></nav>
 
-                <nav id="navigation" class="pull-right">
-                    <ul>
-                        <li><a href="#">Discover ASK <i class="icon-chevron-down"></i></a>
-                            <ul>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="docs/school-profile.pdf" target="_blank">School Profile</a></li>
-                                <li><a href="superintendent.html">Governance</a></li>
-                                <li><a href="director-of-technology.html">Directors</a></li>
-                                <li><a href="employment.html">Employment</a></li>
-                            </ul>
-                        </li>
+                    <nav id="navigation" class="pull-right">
+                        <ul>
+                            <li><a href="#">Discover ASK <i class="icon-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="docs/school-profile.pdf" target="_blank">School Profile</a></li>
+                                    <li><a href="superintendent.html">Governance</a></li>
+                                    <li><a href="director-of-technology.html">Directors</a></li>
+                                    <li><a href="employment.html">Employment</a></li>
+                                </ul>
+                            </li>
 
-                        <li><a href="#">Programs <i class="icon-chevron-down"></i></a>
-                            <ul>
-                                <li><a href="high-school.html">High School </a>
-                                    <ul>
-                                        <li><a href="docs/hs-course-booklet-17-18.pdf" target="_blank">Course Selection
+                            <li><a href="#">Programs <i class="icon-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="high-school.html">High School </a>
+                                        <ul>
+                                            <li><a href="docs/hs-course-booklet-17-18.pdf" target="_blank">Course Selection
                                             Booklet</a></li>
-                                        <li><a href="docs/hs%20handbook.pdf" target="_blank">HS Handbook</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="middle-school.html">Middle School </a>
-                                    <ul>
-                                        <li><a href="docs/ms%20course%20booklet.pdf" target="_blank">Course Selection
+                                            <li><a href="docs/hs%20handbook.pdf" target="_blank">HS Handbook</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="middle-school.html">Middle School </a>
+                                        <ul>
+                                            <li><a href="docs/ms%20course%20booklet.pdf" target="_blank">Course Selection
                                             Booklet</a></li>
-                                        <li><a href="docs/ms%20handbook.pdf" target="_blank">MS Handbook</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="elementary-school.html">Elementary School </a>
-                                    <ul>
-                                        <li><a href="docs/es%20handbook.pdf" target="_blank">ES Handbook</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                                            <li><a href="docs/ms%20handbook.pdf" target="_blank">MS Handbook</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="elementary-school.html">Elementary School </a>
+                                        <ul>
+                                            <li><a href="docs/es%20handbook.pdf" target="_blank">ES Handbook</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
 
-                        <li><a href="admissions.html">Admissions</a></li>
+                            <li><a href="admissions.html">Admissions</a></li>
 
-                        <li><a href="http://mail.google.com/a/ask.edu.kw">ASK Mail</a></li>
+                            <li><a href="http://mail.google.com/a/ask.edu.kw">ASK Mail</a></li>
 
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div><!-- /span12 -->
-        </div><!-- /row -->
-    </div><!-- /container -->
-</header><!-- /top-header -->
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /span12 -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </header>
+    <!-- /top-header -->
 
-<section id="wrapper">
-    <div class="container">
-        <div class="row">
+    <section id="wrapper">
+        <div class="container">
+            <div class="row">
 
-            <div id="content" class="span12 box-padding-both">
-
-                <div class="row">
-
-                    <div class="span9 home-v1-featured-slider carousel slide" id="home-v1-featured-slider">
-                        <!-- Carousel items -->
-                        <div class="carousel-inner">
-
-                            <div class="active item">
-                                <div class="slide-content">
-                                    <a target="_blank" href="img/summer-school-poster.jpg">
-                                        <img src="img/summer-school-web.jpg" alt=""></a>
-                                </div><!-- /slide-content -->
-                            </div><!-- /item -->
-
-                            <div class="item">
-                                <div class="slide-content">
-                                    <a target="_blank" href="docs/Summer-Camp-2017-Registration-Form.pdf">
-                                        <img src="img/summer-camp-web2017.jpg" alt=""></a>
-                                </div><!-- /slide-content -->
-                            </div><!-- /item -->
-
-                            <div class="item">
-                                <div class="slide-content">
-                                    <img src="img/spring-concert.jpg" alt="">
-                                </div><!-- /slide-content -->
-                             </div><!-- /item -->
-
-                            <div class="item">
-                                <div class="slide-content">
-                                    <img src="img/frontslider10.jpg" alt="">
-                                </div><!-- /slide-content -->
-                            </div><!-- /item -->
-
-                            <div class="item">
-                                <div class="slide-content">
-                                    <img src="img/frontslider11.jpg" alt="">
-                                </div><!-- /slide-content -->
-                            </div><!-- /item -->
-
-                            <div class="item">
-                                <div class="slide-content">
-                                    <img src="img/frontslider12.jpg" alt="">
-                                </div><!-- /slide-content -->
-                            </div><!-- /item -->
-
-                            <!--<div class="item">-->
-                                <!--<div class="slide-content">-->
-                                    <!--<img src="img/frontslider16.jpg" alt="">-->
-                                <!--</div>&lt;!&ndash; /slide-content &ndash;&gt;-->
-                            <!--</div>&lt;!&ndash; /item &ndash;&gt;-->
-
-                            <div class="item">
-                                <div class="slide-content">
-                                    <img src="img/frontslider20.jpg" alt="">
-                                </div><!-- /slide-content -->
-                            </div><!-- /item -->
-
-                        </div><!-- Carousel-inner -->
-
-                        <a class="carousel-control left" href="#home-v1-featured-slider" data-slide="prev">&lsaquo;</a>
-                        <a class="carousel-control right" href="#home-v1-featured-slider" data-slide="next">&rsaquo;</a>
-
-                    </div><!-- /home-v1-featured-slider -->
-
-                    <div class="span3 home-v1-featured-boxes">
-
-                        <div class="featured-box" id="index-top-feature-box">
-                            <a href="https://www.stu.ask.edu.kw/moodle/login/index.php" target="_blank">
-                                <img src="img/moodle.png" alt="">
-                                <div class="featured-box-hover">
-                                    <p>Moodle @ ASK</p>
-                                </div><!-- /featured-box-hover -->
-                            </a>
-                        </div><!-- /featured-box -->
-
-                        <div class="featured-box" id="index-bottom-feature-box">
-                            <a href="activities-calendar.html">
-                                <img src="img/activities-calendar-icon.png" alt="">
-                                <div class="featured-box-hover">
-                                    <p class="featured-box-hover-text">Falcon<br />Activities & Athletics Calendar</p>
-                                </div><!-- /featured-box-hover -->
-                            </a>
-                        </div><!-- /featured-box -->
-
-                    </div><!-- /featured-boxes -->
-
-                </div><!-- /row -->
-                <div class="mobile-hide">
-                    <br>
-                    <br>
+                <div id="content" class="span12 box-padding-both">
 
                     <div class="row">
-                        <div class="span12">
-                            <div class="blue-hero-box clearfix">
-                                <h1 class="title">Practice Compassion - Make a Difference - Learn for Life</h1>
-                                <h2 class="subtitle">ASK inspires lifelong learners empowered to excel in American
+
+                        <div class="span9 home-v1-featured-slider carousel slide" id="home-v1-featured-slider">
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+
+                                <div class="active item">
+                                    <div class="slide-content">
+                                        <a target="_blank" href="img/summer-school-poster.jpg">
+                                            <img src="img/summer-school-web.jpg" alt=""></a>
+                                    </div>
+                                    <!-- /slide-content -->
+                                </div>
+                                <!-- /item -->
+
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <a target="_blank" href="docs/Summer-Camp-2017-Registration-Form.pdf">
+                                            <img src="img/summer-camp-web2017.jpg" alt=""></a>
+                                    </div>
+                                    <!-- /slide-content -->
+                                </div>
+                                <!-- /item -->
+
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <img src="img/spring-concert.jpg" alt="">
+                                    </div>
+                                    <!-- /slide-content -->
+                                </div>
+                                <!-- /item -->
+
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <img src="img/frontslider10.jpg" alt="">
+                                    </div>
+                                    <!-- /slide-content -->
+                                </div>
+                                <!-- /item -->
+
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <img src="img/frontslider11.jpg" alt="">
+                                    </div>
+                                    <!-- /slide-content -->
+                                </div>
+                                <!-- /item -->
+
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <img src="img/frontslider12.jpg" alt="">
+                                    </div>
+                                    <!-- /slide-content -->
+                                </div>
+                                <!-- /item -->
+
+                                <!--<div class="item">-->
+                                <!--<div class="slide-content">-->
+                                <!--<img src="img/frontslider16.jpg" alt="">-->
+                                <!--</div>&lt;!&ndash; /slide-content &ndash;&gt;-->
+                                <!--</div>&lt;!&ndash; /item &ndash;&gt;-->
+
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <img src="img/frontslider20.jpg" alt="">
+                                    </div>
+                                    <!-- /slide-content -->
+                                </div>
+                                <!-- /item -->
+
+                            </div>
+                            <!-- Carousel-inner -->
+
+                            <a class="carousel-control left" href="#home-v1-featured-slider" data-slide="prev">&lsaquo;</a>
+                            <a class="carousel-control right" href="#home-v1-featured-slider" data-slide="next">&rsaquo;</a>
+
+                        </div>
+                        <!-- /home-v1-featured-slider -->
+
+                        <div class="span3 home-v1-featured-boxes">
+
+                            <div class="featured-box" id="index-top-feature-box">
+                                <a href="https://www.stu.ask.edu.kw/moodle/login/index.php" target="_blank">
+                                    <img src="img/moodle.png" alt="">
+                                    <div class="featured-box-hover">
+                                        <p>Moodle @ ASK</p>
+                                    </div>
+                                    <!-- /featured-box-hover -->
+                                </a>
+                            </div>
+                            <!-- /featured-box -->
+
+                            <div class="featured-box" id="index-bottom-feature-box">
+                                <a href="activities-calendar.html">
+                                    <img src="img/activities-calendar-icon.png" alt="">
+                                    <div class="featured-box-hover">
+                                        <p class="featured-box-hover-text">Falcon<br />Activities & Athletics Calendar</p>
+                                    </div>
+                                    <!-- /featured-box-hover -->
+                                </a>
+                            </div>
+                            <!-- /featured-box -->
+
+                        </div>
+                        <!-- /featured-boxes -->
+
+                    </div>
+                    <!-- /row -->
+                    <div class="mobile-hide">
+                        <br>
+                        <br>
+
+                        <div class="row">
+                            <div class="span12">
+                                <div class="blue-hero-box clearfix">
+                                    <h1 class="title">Practice Compassion - Make a Difference - Learn for Life</h1>
+                                    <h2 class="subtitle">ASK inspires lifelong learners empowered to excel in American
                                     higher education and the global community as productive, compassionate
                                     citizens.</h2>
-                            </div><!-- /span12 -->
-                        </div><!-- /blue-hero-box -->
-                    </div><!-- /row -->
-
-                    <br>
-
-                    <br>
-
-                </div>
-
-
-                <div class="row-fluid bottom-index-row" id="bottom-row-1" >
-
-                    <div class="span4 proj-box-wr  box-left-index">
-                        <div class="project-box cal-box">
-                            <div id="cal_left">
-                                <a href="docs/Calendar%202016-2017.pdf" target="_blank">
-                                    <img class="grow" src="img/cal-left.png" alt="calendar icon"/>
-                                    </a>
+                                </div>
+                                <!-- /span12 -->
                             </div>
-                            <div id="cal_right"><a href="docs/2017-2018ASKCalendar.pdf" target="_blank">
-                                <img class="grow" src="img/cal-right.png" alt="calendar icon"/>
-	                            </a>
-                            </div>
+                            <!-- /blue-hero-box -->
                         </div>
-	                    <h4>Yearly Calendars</h4>
-                    </div><!-- /span4 -->
+                        <!-- /row -->
 
-                    <div class="span4 proj-box-wr box-right-index">
-                        <div class="project-box">
-                            <a href="http://askhighschooloffice.wordpress.com" target="_blank">
-                                <img src="img/fronths.png" alt="">
-                                </a>
-                        </div><!-- /project-box -->
-                        <h4>High School Blog</h4>
-                    </div><!-- /span4 -->
+                        <br>
 
-                    <div class="span4 proj-box-wr box-right-index">
-                        <div class="project-box">
-                            <a href="http://askhighschooloffice.wordpress.com" target="_blank">
-                                <img src="img/fronths.png" alt="">
-                                </a>
-                        </div><!-- /project-box -->
-                        <h4>High School Blog</h4>
-                    </div><!-- /span4 -->
+                        <br>
+
+                    </div>
+
+
+                    <div class="row-fluid bottom-index-row" id="bottom-row-1">
+                        <div class="row-fluid">
+                            <ul class="thumbnails">
+                                <li class="span4">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/300x200" src="img/frontes.png"alt="">
+                                        <div class="caption">
+                                            <h3>Elementary Blog</h3>
+                                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                            <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="span4">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/300x200" src="img/frontms.png" alt="">
+                                        <div class="caption">
+                                            <h3>Middle School Blog</h3>
+                                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                            <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="span4">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/300x200" src="img/fronths.png" alt="">
+                                        <div class="caption">
+                                            <h3>High School Blog</h3>
+                                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                            <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="row-fluid bottom-index-row" id="bottom-row-2">
+                        <div class="row-fluid">
+                            <ul class="thumbnails">
+                                <li class="span4">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/300x200" src="img/frontes.png"alt="">
+                                        <div class="caption">
+                                            <h3>Summer Camp</h3>
+                                            <p>Join us for  Summer Camp.  Click for more information.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="span4">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/300x200" src="img/frontms.png" alt="">
+                                        <div class="caption">
+                                            <h3>Summer School</h3>
+                                            <p>Join us for  Summer School.  Click for more information.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="span4">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/300x200" src="img/fronths.png" alt="">
+                                        <div class="caption">
+                                            <h3>Academic Calendar</h3>
+                                            <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
+                                            <p><a href="#" class="btn btn-primary">2016/17</a> <a href="#" class="btn">2017/18</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <!-- /row -->
+
                 </div>
-
-                <div class="row-fluid bottom-index-row" id="bottom-row-2">
-
-                    <div class="span4 proj-box-wr box-left-index">
-                        <div class="project-box">
-                            <a href="http://askmiddleschooloffice.wordpress.com" target="_blank">
-                                <img src="img/frontms.png" alt="">
-                                </a>
-                        </div><!-- /project-box -->
-	                    <h4>Middle School Blog</h4>
-                    </div><!-- /span4 -->
-
-                    <div class="span4 proj-box-wr box-right-index">
-                        <div class="project-box">
-                            <a href="http://askelementaryoffice.wordpress.com" target="_blank">
-                                <img src="img/frontes.png" alt="">
-                                </a>
-                        </div><!-- /project-box -->
-	                    <h4>Elementary School Blog</h4>
-                    </div><!-- /span4 -->
-
-                    <div class="span4 proj-box-wr box-right-index">
-                        <div class="project-box">
-                            <a href="http://askelementaryoffice.wordpress.com" target="_blank">
-                                <img src="img/frontes.png" alt="">
-                                </a>
-                        </div><!-- /project-box -->
-	                    <h4>Elementary School Blog</h4>
-                    </div><!-- /span4 -->
-
-                </div><!-- /row -->
-            </div><!-- /content -->
-        </div><!-- /row -->
-    </div><!-- /container -->
-</section><!-- /wrapper -->
+                <!-- /content -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </section>
+    <!-- /wrapper -->
 
 
-<footer id="main-footer">
+    <footer id="main-footer">
 
-    <div class="container inner-footer box-padding-both">
-        <div class="row">
-            <!--<div class="span3">-->
+        <div class="container inner-footer box-padding-both">
+            <div class="row">
+                <!--<div class="span3">-->
 
-            <h5>About us</h5>
+                <h5>About us</h5>
 
-            <p>The American School of Kuwait was founded in 1964. It is a privately owned,
-                independent coeducational day school which offers a general academic curriculum
-                for students of all nationalities.</p>
+                <p>The American School of Kuwait was founded in 1964. It is a privately owned, independent coeducational day school which offers a general academic curriculum for students of all nationalities.</p>
 
-        </div><!-- /row -->
-    </div><!-- /container -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
 
-</footer>
+    </footer>
 
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
 
 </body>
+
 </html>
