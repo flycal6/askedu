@@ -1,0 +1,13 @@
+body {
+    margin-top: 7rem;
+}
+
+#top-hr {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.card-columns {
+  @include media-breakpoint-only(sm) {
+    column-count: 1;
+  }

@@ -57,3 +57,10 @@ fabric.properties
 
 /sendmail.php
 /.idea/
+
+# Example files only for developing
+jquery-gcal-flow-3.0.1/docs/
+jquery-gcal-flow-3.0.1/example.html
+
+# SASS Cache
+.sass-cache/*
