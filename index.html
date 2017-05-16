@@ -79,6 +79,17 @@
                 padding-right: 0;
             }
         }
+
+        @media (min-width: 768px) and (max-width:979px) {
+            .thumbnails, .flexit {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex !important;
+                /*flex:1 1 auto;*/
+            }
+        }
     </style>
 </head>
 
@@ -286,7 +297,7 @@
 
                     <div class="row-fluid">
                         <ul class="thumbnails">
-                            <li class="span4">
+                            <li class="span4 flexit">
                                 <div class="thumbnail">
                                     <img data-src="holder.js/300x200" src="img/frontes.png" alt="">
                                     <div class="caption">
@@ -296,7 +307,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="span4">
+                            <li class="span4 flexit">
                                 <div class="thumbnail">
                                     <img data-src="holder.js/300x200" src="img/frontms.png" alt="">
                                     <div class="caption">
@@ -306,7 +317,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="span4">
+                            <li class="span4 flexit">
                                 <div class="thumbnail">
                                     <img data-src="holder.js/300x200" src="img/fronths.png" alt="">
                                     <div class="caption">
