@@ -197,7 +197,13 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 479px) {
+          padding-left: 0;
+          padding-right: 0;
+  }
 }
+
 
 ::selection, ::-moz-selection {
   background: $hsblue;

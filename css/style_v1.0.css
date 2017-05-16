@@ -790,6 +790,10 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column; }
+  @media (max-width: 479px) {
+    body {
+      padding-left: 0;
+      padding-right: 0; } }
 
 ::selection, ::-moz-selection {
   background: #323e4e;
