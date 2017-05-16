@@ -1125,7 +1125,7 @@ a.nav-toggle {
   display: none;
   cursor: pointer;
   position: relative;
-  top: 36px;
+  top: 42px;
   /* Adjust this value if the toggle is not aligning with the logo correctly */
   right: 5px;
   text-decoration: none; }
