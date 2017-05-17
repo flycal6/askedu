@@ -1,7 +1,7 @@
 /*!
  * Gravity Framework v1.2
  * Copyright 2013 Themesgravity
- * 
+ *
  * Anchorra - Multipurpose responsive Html Template
  */
 /* ==========================================================================
@@ -790,6 +790,10 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column; }
+  @media (max-width: 479px) {
+    body {
+      padding-left: 0;
+      padding-right: 0; } }
 
 ::selection, ::-moz-selection {
   background: #323e4e;
@@ -1120,22 +1124,17 @@ ul.arrow li {
 /* 4.4 Mobile Navigation(responsive) styling
 ==========================*/
 a.nav-toggle {
-  color: #ffffff;
-  font-size: 26px;
-  padding: 10px 18px 8px 18px;
-  background: #2b333e;
+  color: #f7f7f7;
+  font-size: 36px;
   display: none;
   cursor: pointer;
   position: relative;
-  top: 38px;
+  top: 42px;
   /* Adjust this value if the toggle is not aligning with the logo correctly */
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  right: 5px;
   text-decoration: none; }
   a.nav-toggle:hover {
-    background: #191f26;
-    text-decoration: none; }
+    color: #bed4df; }
 
 #mobile-navigation {
   display: none;
@@ -3333,4 +3332,4 @@ a {
   .sp-table th {
     border-bottom: 1px solid #444444; }
 
-/*# sourceMappingURL=style_v1.0.css.map */
+/*# sourceMappingURL=style_v1.1.css.map */
