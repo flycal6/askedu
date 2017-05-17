@@ -622,25 +622,25 @@ ul.horizontal-tabs {
   height: 100%; }
 
 .carousel.testimonials .item {
-  -webkit-transition: 0.6s ease-in-out top;
-  -moz-transition: 0.6s ease-in-out top;
-  -ms-transition: 0.6s ease-in-out top;
-  -o-transition: 0.6s ease-in-out top;
-  transition: 0.6s ease-in-out top; }
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+  -ms-transition: opacity 1s ease; }
 .carousel.testimonials .active {
-  top: 0; }
+  top: 0;
+  opacity: 1; }
 .carousel.testimonials .next {
-  top: 250px; }
+  opacity: 0; }
 .carousel.testimonials .prev {
-  top: -250px; }
+  opacity: 0; }
 .carousel.testimonials .next.left, .carousel.testimonials .prev.right {
-  top: 0; }
+  top: 0;
+  opacity: 1; }
 .carousel.testimonials .active.left {
-  top: -250px; }
+  opacity: 0; }
 .carousel.testimonials .active.right {
-  top: 250px; }
-.carousel.testimonials .item {
-  left: 0; }
+  opacity: 0; }
 
 /***
    Index
