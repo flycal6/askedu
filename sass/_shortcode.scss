@@ -657,6 +657,10 @@ ul.horizontal-tabs {
     min-height: 250px;
     padding: 25px 100px 25px 0;
 
+    @media (max-width: 480px) {
+        padding: 25px;
+    }
+
     img {
       float: left;
       border-radius: 50%;
@@ -664,14 +668,24 @@ ul.horizontal-tabs {
       -moz-border-radius: 50%;
       -o-border-radius: 50%;
       margin-right: 60px;
+
+      @media (max-width: 480px) {
+          float: none;
+          margin: auto;
+          display: block;
+      }
     }
 
     h2 {
       color: #929292;
       margin-top: 40px;
+
+      @media (max-width: 480px) {
+          text-align: center;
+      }
     }
 
-    span.divider {
+    .divider {
       font-weight: 700;
       font-size: 20px;
     }
@@ -687,9 +701,14 @@ ul.horizontal-tabs {
       }
     }
 
-    span.author {
+    .author {
       color: #5c5656;
       font-size: 1.375em;
+
+      @media (max-width: 480px) {
+          text-align: center;
+          display: block;
+      }
     }
 
     .desig {
@@ -698,8 +717,11 @@ ul.horizontal-tabs {
       font-size: 0.938em;
       margin-left: 10px;
       position: relative;
-      left: 15px;
       top: 6px;
+
+      @media (max-width: 480px) {
+          text-align: center;
+      }
     }
   }
 
