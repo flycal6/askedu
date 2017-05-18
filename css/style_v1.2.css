@@ -47,6 +47,10 @@ body {
   .grow:hover {
     transform: scale(1.1); }
 
+@media (max-width: 480px) {
+  ul.thumbnails {
+    margin-bottom: 0; } }
+
 /*THIS IS THE SHORTCODES CSS FILE*/
 /* ==========================================================================
    Faq Accordion Styles
@@ -3143,9 +3147,15 @@ table {
 /*align feature boxex to top and bottom of row on large displays*/
 #index-top-feature-box {
   top: 0; }
+  @media (max-width: 480px) {
+    #index-top-feature-box {
+      margin-bottom: 20px; } }
 
 #index-bottom-feature-box {
   margin-bottom: 0; }
+  @media (max-width: 480px) {
+    #index-bottom-feature-box {
+      margin-bottom: 20px; } }
 
 /************* activities-calendar.html************************************************/
 @media (min-width: 1200px) {

@@ -5,3 +5,9 @@
     transform: scale(1.1);
   }
 }
+
+ul.thumbnails {
+    @media (max-width: 480px) {
+        margin-bottom: 0;
+    }
+}

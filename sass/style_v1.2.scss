@@ -3659,10 +3659,18 @@ table {
 
 #index-top-feature-box {
   top: 0;
+
+  @media (max-width: 480px) {
+      margin-bottom: 20px;
+  }
 }
 
 #index-bottom-feature-box {
   margin-bottom: 0;
+
+  @media (max-width: 480px) {
+      margin-bottom: 20px;
+  }
 }
 
 /************* activities-calendar.html************************************************/
