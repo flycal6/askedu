@@ -51,6 +51,17 @@ body {
   ul.thumbnails {
     margin-bottom: 0; } }
 
+.btn-blk-half {
+  width: 48%; }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .thumbnails, .flexit {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex !important;
+    /*flex:1 1 auto;*/ } }
 /*THIS IS THE SHORTCODES CSS FILE*/
 /* ==========================================================================
    Faq Accordion Styles
