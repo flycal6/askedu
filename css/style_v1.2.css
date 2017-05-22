@@ -11,27 +11,7 @@
  * Example Use:                  *
  * @include border-radius(5px);  *
  *********************************/
-/*.first {*/
-/*min-width: 30%;*/
-/*margin-left: auto;*/
-/*margin-right: auto;*/
-/*display: inline-block;*/
-/*padding: 0 10px 0 20px;*/
-/*}*/
-/*.second {*/
-/*min-width: 30%;*/
-/*margin-left: auto;*/
-/*margin-right: auto;*/
-/*display: inline-block;*/
-/*padding: 0 10px;*/
-/*}*/
-/*.third {*/
-/*min-width: 30%;*/
-/*margin-left: auto;*/
-/*margin-right: auto;*/
-/*display: inline-block;*/
-/*padding: 0 20px 0 10px;*/
-/*}*/
+
 /* CSS Document */
 @import url("bootstrap.min.css");
 @import url("bootstrap-responsive.min.css");
@@ -214,9 +194,9 @@ body {
   display: inline-block;
   padding: 12px 50px;
   font-size: 1.250em;
+  border-radius: 5px;
   -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px; }
+  -moz-border-radius: 5px; }
 
 /*Small-btn*/
 .small-btn {
@@ -271,9 +251,9 @@ body {
 .cyan-cta-btn {
   background: #bed4df;
   color: #ffffff;
+  border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  border-radius: 5px;
   font-weight: 700;
   display: inline-block;
   border-bottom: 7px solid #a9bcc6;
@@ -451,9 +431,10 @@ ul.horizontal-tabs {
   padding: 25px 100px 25px 0; }
   .recent .slide-content img {
     float: left;
+    border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    border-radius: 50%;
+    -o-border-radius: 50%;
     margin-right: 60px; }
   .recent .slide-content h2 {
     color: #929292;
