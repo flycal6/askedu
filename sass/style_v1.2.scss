@@ -106,6 +106,10 @@ div.carousel {
   &.pull-left {
     margin-right: 30px;
     margin-bottom: 15px;
+
+    @media (max-width: 480px) {
+      margin-right: 0;
+    }
   }
 
   &.pull-right {
@@ -462,7 +466,6 @@ ul.arrow li {
   line-height: 8.125em;
 
   a {
-    /*background: url("../img/logo.png") no-repeat scroll 0px 1px rgba(0, 0, 0, 0);*/
     display: inline-block;
     width: 355px;
     height: 130px;
@@ -525,7 +528,7 @@ ul.arrow li {
       }
 
       &:hover > a {
-        color: #ffffff;
+        color: $offwhite;
       }
     }
 
@@ -635,14 +638,6 @@ ul.arrow li {
   }
 }
 
-/* First Level */
-
-/* Second Level */
-
-/*FIX FOR IE MENU ADDED V 1.2*/
-
-/* Third Level */
-
 /* IE Dropdown Fix
 ==========================*/
 
@@ -657,21 +652,17 @@ a.nav-toggle {
   color: $offwhite;
   font-size: 36px;
   padding: 0 10px;
-  // background: #2b333e;
+  // background: #2b333e; /* uncomment this if you want the padding to have a different color */
   display: none;
   cursor: pointer;
   position: relative;
   top: 42px;  /* Adjust this value if the toggle is not aligning with the logo correctly */
   right: 5px;
-  // -webkit-border-radius: 5px;
-  // -moz-border-radius: 5px;
-  // border-radius: 5px;
+  @include border-radius(5px);
   text-decoration: none;
 
   &:hover {
-    // background: #191f26;
-    // text-decoration: none;
-    color: $esblue;
+    color: $camel;
   }
 }
 
@@ -911,7 +902,7 @@ h3.subscribe-box-submit {
 
   input {
     height: 50px;
-    border-radius: 0;
+    @include border-radius(0);
     background: #ffffff;
     border: 0;
     color: #d3d2cf !important;
@@ -1045,7 +1036,7 @@ span.footer-subscribe-submit {
   input {
     height: 47px;
     max-width: 199px;
-    border-radius: 0;
+    @include border-radius(0);
     background: #404345;
     border: 0;
     color: #afbbc1 !important;
@@ -1195,7 +1186,7 @@ span.footer-subscribe-submit {
       text-decoration: none;
 
       &:hover, &.active {
-        color: #000000;
+        color: $dark;
         text-decoration: none;
       }
     }
@@ -1223,7 +1214,7 @@ span.footer-subscribe-submit {
   input {
     height: 47px;
     width: 100%;
-    border-radius: 0;
+    @include border-radius(0);
     background: #ffffff;
     color: #d6d3d3 !important;
     font-weight: 400;
@@ -1308,9 +1299,7 @@ span.footer-subscribe-submit {
     text-align: center;
     background: transparent;
     border: none;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
+    @include border-radius(0);
     opacity: 1;
     filter: alpha(opacity = 100);
     text-decoration: none;
@@ -1370,9 +1359,7 @@ span.footer-subscribe-submit {
   text-align: center;
   background: transparent;
   border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
+  @include border-radius(0);
   opacity: 1;
   filter: alpha(opacity = 100);
   text-decoration: none;
@@ -1961,10 +1948,6 @@ span.footer-subscribe-submit {
   padding: 35px 0 30px 0;
   margin: 40px 0;
 
-  p {
-    /*margin-bottom: 10px;*/
-  }
-
   .author-social {
     cursor: default;
 
@@ -1993,9 +1976,6 @@ ul.commentlist {
 
   li.comment {
     list-style: none;
-
-    /*	border-top: 1px solid #e2e2e2;
-        border-bottom: 1px solid #e2e2e2;*/
   }
 
   .comment-body {
@@ -2072,7 +2052,7 @@ ul.children ul.children:last-child {
 .comment-reply form {
   input {
     height: 48px;
-    border-radius: 0;
+    @include border-radius(0);
     box-shadow: none !important;
     border: 2px solid #ecebe9;
     font-size: 15px;
@@ -2085,7 +2065,7 @@ ul.children ul.children:last-child {
   }
 
   textarea {
-    border-radius: 0;
+    @include border-radius(0);
     box-shadow: none;
     border: 2px solid #ecebe9;
     font-size: 15px;
@@ -2155,16 +2135,12 @@ ul.children ul.children:last-child {
     font-size: 50px;
     font-weight: 100;
     line-height: 43px;
-    color: #fff;
+    color: $offwhite;
     text-align: center;
     text-decoration: none;
-
-    /*background:      rgba(45, 45, 45);*/
     background: rgba(45, 45, 45, 0.78);
     border: none;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    @include border-radius(5px);
     opacity: 1;
     filter: alpha(opacity = 100);
 
@@ -2174,8 +2150,7 @@ ul.children ul.children:last-child {
   }
 
   a.carousel-control:hover {
-    background: rgb(222, 58, 49);
-    background: rgba(222, 58, 49, 0.78);
+    background: rgba(187, 171, 149, 0.78); // equal to $camel
   }
 }
 
@@ -2194,38 +2169,6 @@ ul.children ul.children:last-child {
   img {
     width: 100%;
   }
-
-  // a:hover .featured-box-hover {
-  //   opacity: 1;
-  //   filter: alpha(opacity = 100);
-  // }
-  //
-  // .featured-box-hover {
-  //   opacity: 0;
-  //   filter: alpha(opacity = 0);
-  //   position: absolute;
-  //   height: 100%;
-  //   width: 100%;
-  //   bottom: 0;
-  //   left: 0;
-  //   background: rgb(50, 62, 78);
-  //   background: rgba(50, 62, 78, 0.83);
-  //   color: #f7f7f7;
-  //   padding: 10%;
-  //
-  //   i.icon-align-justify {
-  //     font-size: 30px;
-  //   }
-  //
-  //   p {
-  //     font-size: 1.2em;
-  //     font-weight: 700;
-  //     line-height: 1.3;
-  //     margin-top: 8px;
-  //     text-align: center;
-  //   //   vertical-align: middle;
-  //   }
-  // }
 }
 
 /* ==========================================================================
@@ -2253,9 +2196,7 @@ ul.children ul.children:last-child {
     /*background:    rgba(45, 45, 45);*/
     background: rgba(45, 45, 45, 0.88);
     border: none;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    @include border-radius(5px);
     opacity: 1;
     filter: alpha(opacity = 100);
     text-decoration: none;
@@ -2310,7 +2251,7 @@ form.contact-form {
 
   input {
     height: 48px;
-    border-radius: 0;
+    @include border-radius(0);
     box-shadow: none !important;
     border: 2px solid #ecebe9;
     font-size: 15px;
@@ -2337,7 +2278,7 @@ form.contact-form {
       border-color: #dfdfdf !important;
     }
 
-    border-radius: 0;
+    @include border-radius(0);
     box-shadow: none !important;
     border: 2px solid #ecebe9;
     font-size: 15px;
@@ -2376,9 +2317,7 @@ form.contact-form {
   text-align: center;
   background: #222;
   border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
+  @include border-radius(2px);
   opacity: .43;
   filter: alpha(opacity = 43);
   text-decoration: none;
@@ -2388,8 +2327,9 @@ form.contact-form {
   }
 
   &:hover {
-    opacity: 1;
-    filter: alpha(opacity = 100);
+    // opacity: 1;
+    // filter: alpha(opacity = 100);
+    background: rgba(187, 171, 149, 0.78);
   }
 }
 
@@ -2815,8 +2755,7 @@ form.contact-form {
 
   .testimonials .slide-content {
     span.author {
-    //   margin-bottom: 8px;
-      display: inline-block;
+      margin-bottom: 8px;
     }
   }
 
@@ -2915,10 +2854,6 @@ form.contact-form {
     display: table;
     margin: 20px auto 0;
   }
-
-/*  .inner-footer .span3 {
-    margin-top: 40px;
-  }*/
 
   .info-box {
     margin-bottom: 20px;
@@ -3145,12 +3080,6 @@ form.contact-form {
     img {
       width: 100%;
     }
-  }
-
-  .recent .slide-content h2, .testimonials .slide-content h2 {
-    margin-top: 12px;
-    font-size: 1.2em;
-    line-height: 1.4;
   }
 }
 
