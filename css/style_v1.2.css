@@ -531,7 +531,10 @@ ul.horizontal-tabs {
    ========================================================================== */
 .testimonials .slide-content {
   min-height: 250px;
-  padding: 25px 100px 25px 0; }
+  padding: 25px 25px 25px 0; }
+  @media (max-width: 768px) {
+    .testimonials .slide-content {
+      padding-right: 0; } }
   @media (max-width: 480px) {
     .testimonials .slide-content {
       padding: 25px; } }
@@ -541,6 +544,10 @@ ul.horizontal-tabs {
     -moz-border-radius: 50%;
     border-radius: 50%;
     margin-right: 60px; }
+    @media (max-width: 768px) {
+      .testimonials .slide-content img {
+        margin-top: 20px;
+        margin-right: 60px; } }
     @media (max-width: 480px) {
       .testimonials .slide-content img {
         float: none;
@@ -548,7 +555,9 @@ ul.horizontal-tabs {
         display: block; } }
   .testimonials .slide-content h2 {
     color: #929292;
-    margin-top: 40px; }
+    margin-top: 30px;
+    font-size: 1.2em;
+    line-height: 1.4; }
     @media (max-width: 480px) {
       .testimonials .slide-content h2 {
         text-align: center; } }
@@ -573,7 +582,6 @@ ul.horizontal-tabs {
     display: block;
     color: #5c5656;
     font-size: 0.938em;
-    margin-left: 10px;
     position: relative;
     top: 6px; }
     @media (max-width: 480px) {
@@ -713,6 +721,9 @@ ul.horizontal-tabs {
 div.carousel.pull-left {
   margin-right: 30px;
   margin-bottom: 15px; }
+  @media (max-width: 480px) {
+    div.carousel.pull-left {
+      margin-right: 0; } }
 div.carousel.pull-right {
   margin-left: 30px;
   margin-bottom: 15px; }
@@ -983,7 +994,6 @@ ul.arrow li {
 .logo {
   line-height: 8.125em; }
   .logo a {
-    /*background: url("../img/logo.png") no-repeat scroll 0px 1px rgba(0, 0, 0, 0);*/
     display: inline-block;
     width: 355px;
     height: 130px;
@@ -1025,7 +1035,7 @@ ul.arrow li {
       text-decoration: none;
       display: inline-block; }
     #navigation ul li:hover > a {
-      color: #ffffff; }
+      color: #f7f7f7; }
   #navigation ul > li {
     margin-left: 25px; }
   #navigation ul > li a i {
@@ -1098,10 +1108,6 @@ ul.arrow li {
     top: 51px;
     width: 100%; }
 
-/* First Level */
-/* Second Level */
-/*FIX FOR IE MENU ADDED V 1.2*/
-/* Third Level */
 /* IE Dropdown Fix
 ==========================*/
 .ie7 #navigation, .ie8 #navigation, .no-js #navigation {
@@ -1484,7 +1490,7 @@ span.footer-subscribe-submit {
       color: #78a3b9;
       text-decoration: none; }
       #sidebar .menu-widget ul li a:hover, #sidebar .menu-widget ul li a.active {
-        color: #000000;
+        color: #2d3032;
         text-decoration: none; }
 
 #dynamic-sidebar .icon-caret-right {
@@ -2020,8 +2026,6 @@ span.footer-subscribe-submit {
   border-bottom: 1px solid #e2e2e2;
   padding: 35px 0 30px 0;
   margin: 40px 0; }
-  .about-author p {
-    /*margin-bottom: 10px;*/ }
   .about-author .author-social {
     cursor: default; }
     .about-author .author-social a {
@@ -2039,9 +2043,7 @@ span.footer-subscribe-submit {
 ul.commentlist {
   margin-top: 40px; }
   ul.commentlist li.comment {
-    list-style: none;
-    /*	border-top: 1px solid #e2e2e2;
-        border-bottom: 1px solid #e2e2e2;*/ }
+    list-style: none; }
   ul.commentlist .comment-body {
     padding: 25px 0 10px 0; }
 
@@ -2241,6 +2243,8 @@ form.contact-form .control-label {
   margin: 0; }
 form.contact-form input {
   height: 48px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   border-radius: 0;
   box-shadow: none !important;
   border: 2px solid #ecebe9;
@@ -2254,6 +2258,8 @@ form.contact-form input:required {
 form.contact-form input:focus {
   border-color: #dfdfdf !important; }
 form.contact-form textarea {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   border-radius: 0;
   box-shadow: none !important;
   border: 2px solid #ecebe9;
@@ -2579,10 +2585,7 @@ form.contact-form button[type="submit"] {
     line-height: 25px; }
 
   .testimonials .slide-content span.author {
-    margin-bottom: 8px;
-    display: inline-block; }
-  .testimonials .slide-content .desig {
-    top: 11px; }
+    margin-bottom: 8px; }
 
   .portfolio-featured {
     top: -100px;
@@ -2652,9 +2655,6 @@ form.contact-form button[type="submit"] {
     display: table;
     margin: 20px auto 0; }
 
-  /*  .inner-footer .span3 {
-      margin-top: 40px;
-    }*/
   .info-box {
     margin-bottom: 20px; }
 
@@ -2910,12 +2910,7 @@ form.contact-form button[type="submit"] {
     width: 100%; }
 
   #index-bottom-feature-box {
-    margin-top: 0; }
-
-  /*#index-top-feature-box {*/
-  /*float:left;*/
-  /*margin-right: 1%;*/
-  /*}*/ }
+    margin-top: 0; } }
 /*HTML FIXES*/
 html {
   -webkit-text-size-adjust: 100%;
@@ -3065,7 +3060,6 @@ table {
     margin-right: 20px;
     height: 105px; }
   .logo img {
-    /*width:340px;*/
     position: absolute;
     left: 20px; }
 
@@ -3091,20 +3085,7 @@ table {
     display: table;
     margin: 20px auto 0;
     padding-top: 15px;
-    width: 100%; }
-
-  /*.project-box img{*/
-  /*width: 35%;*/
-  /*float: left;*/
-  /*margin-right: 5%;*/
-  /*}*/
-  /*  .featured-box  {
-      height:150px;
-    }
-    .featured-box img {
-      margin-top: -10px;
-      width: 95%;
-    } */ }
+    width: 100%; } }
 @media (max-width: 500px) {
   .header-container {
     min-height: 108px !important; }
@@ -3128,16 +3109,7 @@ table {
   #content .admissions-table th:first-child {
     width: 70px; }
   #content .admissions-table th:last-child {
-    width: 40px; }
-
-  /*  .featured-box  {
-      height:120px;
-    }
-    .featured-box img {
-      margin-top: 0px;
-      width: 95%;
-    }
-    */ }
+    width: 40px; } }
 @media (max-width: 380px) {
   .header-container {
     min-height: 72px !important; }
@@ -3153,20 +3125,6 @@ table {
 
   #wrapper > .container {
     padding: 0 20px; } }
-/* Make the Google Calendar on the Sports page responsive*/
-.responsiveCal {
-  position: relative;
-  padding-bottom: 75%;
-  height: 0;
-  overflow: hidden; }
-  .responsiveCal iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1px;
-    min-width: 100%;
-    height: 100%; }
-
 /*align feature boxex to top and bottom of row on large displays*/
 #index-top-feature-box {
   top: 0; }
