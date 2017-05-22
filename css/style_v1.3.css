@@ -598,25 +598,25 @@ ul.horizontal-tabs {
 .testimonials .carousel-inner {
   height: 100%; }
 
-.carousel.testimonials .item {
+.carousel.testimonials .item, .carousel.mainCarousel .item, .carousel.showcase .item {
   left: 0;
   opacity: 0;
   -webkit-transition: opacity 1s ease;
   -moz-transition: opacity 1s ease;
   -ms-transition: opacity 1s ease; }
-.carousel.testimonials .active {
+.carousel.testimonials .active, .carousel.mainCarousel .active, .carousel.showcase .active {
   top: 0;
   opacity: 1; }
-.carousel.testimonials .next {
+.carousel.testimonials .next, .carousel.mainCarousel .next, .carousel.showcase .next {
   opacity: 0; }
-.carousel.testimonials .prev {
+.carousel.testimonials .prev, .carousel.mainCarousel .prev, .carousel.showcase .prev {
   opacity: 0; }
-.carousel.testimonials .next.left, .carousel.testimonials .prev.right {
+.carousel.testimonials .next.left, .carousel.testimonials .prev.right, .carousel.mainCarousel .next.left, .carousel.mainCarousel .prev.right, .carousel.showcase .next.left, .carousel.showcase .prev.right {
   top: 0;
   opacity: 1; }
-.carousel.testimonials .active.left {
+.carousel.testimonials .active.left, .carousel.mainCarousel .active.left, .carousel.showcase .active.left {
   opacity: 0; }
-.carousel.testimonials .active.right {
+.carousel.testimonials .active.right, .carousel.mainCarousel .active.right, .carousel.showcase .active.right {
   opacity: 0; }
 
 /***
@@ -3250,4 +3250,4 @@ a {
   .sp-table th {
     border-bottom: 1px solid #444444; }
 
-/*# sourceMappingURL=style_v1.2.css.map */
+/*# sourceMappingURL=style_v1.3.css.map */
