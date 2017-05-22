@@ -1,3 +1,8 @@
+/*********************************
+ * Example Use:                  *
+ * @include border-radius(5px);  *
+ *********************************/
+
 @mixin box-sizing($box-style) {
   -moz-box-sizing: $box-style;
   -webkit-box-sizing: $box-style;
@@ -27,4 +32,10 @@
     -webkit-transition: $transition;
     -moz-transition: $transition;
     -ms-transition: $transition;
+}
+
+@mixin border-radius($border-radius) {
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    border-radius: $border-radius;
 }
