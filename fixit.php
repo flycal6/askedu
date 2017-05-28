@@ -371,7 +371,7 @@ if ($_POST["cussubmitr"] != "") {
                     <li>Check your email for updates on the job.<br/></li>
                     <li>Jobs will be assigned and fielded with in 2 working days.</li>
                     <li>In case of emergency write URGENT in the "Description of Issue".</li>
-                    <li>For complaints or suggestions please email <a href="mailto:housingcoordinator@ask.edu.kw">Nick Stroh</a></li>
+                    <li>For complaints or suggestions please email housing coordinator <a href="mailto:housingcoordinator@ask.edu.kw">Nick Stroh</a></li>
                 </ol>
             </div>
         </div>
