@@ -1,4 +1,5 @@
 <?php
+include("sendmail.php");
 $name = $_POST['name'];
 $email = $_POST['email'];
 $email = filter_var($email, FILTER_SANITIZE_EMAIL);
@@ -49,14 +50,11 @@ submitted.  Please send an email to thomasb@ask.edu.kw to let me know.");
 mail($recipient2, $subject, $formcontent2, $mailheader2) or die("Something didn't work, and your request probably was not
 submitted.  Please send an email to brian@moneykatz.com to let me know.");
 echo '<html>
-    <head>    
+    <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-   <!-- The line below redirects from the generated page after the number of seconds specified, and to the url listed -->
-    <meta http-equiv="refresh"  content="10;url=http://www.ask.edu.kw/"  />
 
     <title>Request Confirmation</title>
 
@@ -116,7 +114,6 @@ echo "<p class='lead'><strong>Preferred Time:</strong> $time</p></br />";
 echo '<hr>
           <p>In case of an emergency, please contact Albino @ <a href="tel:99829598">9982 9598</a>  (mobile)</p>
           <p>If you have not been updated within 2 working days, please send an email to <a href="mailto:rashed@ask.edu.kw">Rashed Abdul Ghafoor</p>
-          <h3 class="text-muted redirection">Redirecting in 10 seconds...</h3>
           </div>
           <footer class="footer">
             <div class="container">

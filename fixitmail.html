@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="American School of Kuwait">
     <meta name="viewport" content="width=device-width">
-    
+
 
     <!--[if IE 7]>
     <link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
@@ -26,7 +26,7 @@
     <!--<script src="https://use.fontawesome.com/d633105fc1.js"></script>-->
 
     <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">-->
-    <link href='//fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Sintony:400,700" rel="stylesheet" type="text/css">
 
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="js/vendor/jquery-1.10.1.min.js"></script>
@@ -88,23 +88,6 @@
 
 <body>
 
-    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-    <script>
-      function onSignIn(googleUser) {
-        // Useful data for your client-side scripts:
-        var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
-        console.log("Image URL: " + profile.getImageUrl());
-        console.log("Email: " + profile.getEmail());
-
-        // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-        console.log("ID Token: " + id_token);
-      };
-    </script>
 <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
@@ -198,12 +181,15 @@
                                placeholder="Example: F24 or G118" required>
                     </div>
                     <label for="name">Your name?</label><br/>
-                    <input class="input-block-level" type="text" class="form-control" name="name" id="name"
+                    <input class="input-block-level" type="text" name="name" id="name"
                            placeholder="Type your name" required><br/>
 
                     <label for="issue">Please briefly describe the issue.</label><br/>
                     <textarea class="input-block-level" name="issue" id="issue" rows="5"
                               placeholder="Provide details to help the maintenance staff" required></textarea><br/>
+
+                    <label for="time">Preferred Time?</label><br/>
+                    <input class="input-block-level" type="time" name="time" id="time" placeholder="We cannot guarentee this time" /><br />
 
                     <label for="email">Email address</label><br/>
                     <input class="input-block-level form-control" type="email" name="email" id="email"
