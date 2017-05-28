@@ -44,8 +44,7 @@ if ($_POST["cussubmit"] != "") {
     $adminemail = "thomasb@ask.edu.kw";
     $fromemail = "$semail";
     $subject = "ASK Maintenance request";
-    SendHTMLMail($adminemail, $subject, $content, $fromemail) or die("Something didn't work, and your request was not
-    submitted.  Please send an email to thomasb@ask.edu.kw to let me know.");
+    SendHTMLMail($adminemail, $subject, $content, $fromemail);
 
     $content = "<table border='0' width='600'>";
     $content .= "<tr><td>Dear " . $ssname . ",<br /><p></td></tr>";
@@ -72,7 +71,7 @@ if ($_POST["cussubmit"] != "") {
     $fromemail = "maintenance@ask.edu.kw";
     $subject = "ASK Maintenance request";
     SendHTMLMail($adminemail, $subject, $content, $fromemail);
-    echo "<script>alert('Successfully submitted');</script>";
+    echo "<script>alert('Successfully submitted.  You should receive an email verification within 30 minutes.');</script>";
 
 
 }
