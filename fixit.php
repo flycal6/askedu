@@ -40,8 +40,7 @@ if ($_POST["cussubmit"] != "") {
     $content .= "<tr><td colspan='2'>&nbsp;</td></tr>";
     $content .= "</table>";
 
-    // $adminemail = "maintenance@ask.edu.kw, askfixit@hpeprint.com";
-    $adminemail = "thomasb@ask.edu.kw";
+    $adminemail = "maintenance@ask.edu.kw, askfixit@hpeprint.com";
     $fromemail = "$semail";
     $subject = "ASK Maintenance request";
     SendHTMLMail($adminemail, $subject, $content, $fromemail);
@@ -115,8 +114,7 @@ if ($_POST["cussubmitr"] != "") {
     $content .= "<tr><td colspan='2'>&nbsp;</td></tr>";
     $content .= "</table>";
 
-    // $adminemail = "maintenance@ask.edu.kw, askfixit@hpeprint.com";
-    $adminemail = "thomasb@ask.edu.kw";
+    $adminemail = "maintenance@ask.edu.kw, askfixit@hpeprint.com";
     $fromemail = "$semail";
     $subject = "ASK Maintenance request";
     SendHTMLMail($adminemail, $subject, $content, $fromemail);
@@ -168,8 +166,6 @@ if ($_POST["cussubmitr"] != "") {
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style_v1.3.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-
-    <!-- <link href="css/form/fixit-style.css" type="text/css" rel="stylesheet"/> -->
 
     <link href='//fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
 
@@ -250,6 +246,11 @@ if ($_POST["cussubmitr"] != "") {
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        li > a {
+            text-decoration: underline;
+            color: blue;
         }
     </style>
 
@@ -338,7 +339,6 @@ if ($_POST["cussubmitr"] != "") {
                     <?php $dt = gmdate("d/m/Y g:i:s A", time() - ($ms)); ?>
                     <input class="input-block-level" type="text" name="cusdate" id="cusdate" value="<?php echo $dt; ?>" readonly="yes"/><br />
 
-                    <!-- <label class="control-label" for="cusfor">For: </label> -->
                     <div>
                         <label class="radio">School Maintenance
                             <input type="radio" name="cusfor" value="School"/>
@@ -347,7 +347,6 @@ if ($_POST["cussubmitr"] != "") {
                             <input type="radio" name="cusfor" value="Dunes"/>
                         </label>
                     </div>
-
 
                     <label class="control-label" for="cusname">Name: </label><br />
                     <input class="input-block-level" type="text" name="cusname" id="cusname" placeholder="First and Last Name" required /><br />
