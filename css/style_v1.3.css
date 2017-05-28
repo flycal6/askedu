@@ -797,7 +797,10 @@ p {
 
 a {
   color: inherit;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
+  a.thumbnail {
+    padding: 9px; }
   a:hover {
     color: #323e4e;
     text-decoration: underline; }
@@ -3200,9 +3203,6 @@ table {
 @media (min-width: 768px) {
   .other-cash-list {
     padding-left: 20px; } }
-a {
-  cursor: pointer; }
-
 @media (max-width: 767px) {
   .modal {
     position: fixed;

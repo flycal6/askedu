@@ -48,11 +48,11 @@ if ($_POST["cussubmit"] != "") {
     $content = "<table border='0' width='600'>";
     $content .= "<tr><td>Dear " . $ssname . ",<br /><p></td></tr>";
     $content .= "<tr><td colspan='2'>&nbsp;</td></tr>";
-    $content .= "<tr><td colspan='2'>Your application for Maintenance as below is 	received we will work on it and keep you updated. In case an emergency please contact Albino on his Mobile 99829598<br /><br/></td></tr>";
+    $content .= "<tr><td colspan='2'>Your application for Maintenance as below is received we will work on it and keep you updated. In case an emergency please contact Albino on his Mobile 99829598<br /><br/></td></tr>";
 
-    $content .= "<tr><td colspan='2'>Incase your job is not completed or if you are not 		updated in next 2 working days kindly send an email to housingcoordinator@ask.edu.kw<br 		/></td></tr>";
+    $content .= "<tr><td colspan='2'>Incase your job is not completed or if you are not updated in next 2 working days kindly send an email to housingcoordinator@ask.edu.kw<br /></td></tr>";
     $content .= "<tr><td colspan='2'>&nbsp;</td></tr>";
-    $content .= "<tr><td colspan='2'>Maintenance Department<br /> American School of 		Kuwait</td></tr>";
+    $content .= "<tr><td colspan='2'>Maintenance Department<br /> American School of Kuwait</td></tr>";
     $content .= "<tr><td>&nbsp;</td></tr>";
     $content .= "<tr><td>Form submited on Date: " . $ssdate . "</td></tr>";
     $content .= "<tr><td>&nbsp;</td></tr>";
@@ -70,7 +70,7 @@ if ($_POST["cussubmit"] != "") {
     $fromemail = "maintenance@ask.edu.kw";
     $subject = "ASK Maintenance request";
     SendHTMLMail($adminemail, $subject, $content, $fromemail);
-    echo "<script>alert('Successfully submitted');</script>";
+    echo "<script>alert('Successfully submitted.  You should receive an email verification within 30 minutes.');</script>";
 
 
 }
@@ -150,21 +150,27 @@ if ($_POST["cussubmitr"] != "") {
 }
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
+    <title>American School of Kuwait Maintenance Form.</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="American School of Kuwait">
     <meta name="viewport" content="width=device-width">
 
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+    <![endif]-->
 
     <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style_v1.3.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-    <title>American School of Kuwait Maintenance Form.</title>
-    <link href="css/form/fixit-style.css" type="text/css" rel="stylesheet"/>
+    <link href='//fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
 
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="js/vendor/jquery-1.10.1.min.js"></script>
 
     <script language="javascript" type="text/javascript">
         var specimanSignature = 0;
@@ -224,17 +230,28 @@ if ($_POST["cussubmitr"] != "") {
     </script>
 
 
-    <style type="text/css">
-        <!--
-        .style1 {
-            color: #FF0000
+    <style>
+        input, textarea {
+            display: inline-block;
+            font-size: 1em;
+            line-height: normal;
         }
 
-        .style4 {
-            font-size: 72px
+        label {
+            display: inline-block;
+            font-weight: 700;
         }
 
-        -->
+        form, h1, hr {
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        li > a {
+            text-decoration: underline;
+            color: blue;
+        }
     </style>
 
     <?php
@@ -246,78 +263,140 @@ if ($_POST["cussubmitr"] != "") {
 </head>
 
 <body>
-<div>
+<header id="top-header">
+    <div class="container header-container box-padding-both">
+        <div class="row">
+            <div class="span12">
+                <div class="logo pull-left">
+                    <a href="index.html"><img src="img/logo.png" alt="Anchorra Logo"/></a>
+                </div><!-- /logo -->
 
-    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-        <tr>
-            <td align="center" colspan="2"
-                style="font-size:18px; padding-bottom:20px; padding-top:20px; color:#B40101;"><span
-                        class="style4">M</span>aintenance Form
-            </td>
-        </tr>
-        <tr>
-            <td align="center" class="bgimage" style="font-size:36px; color:#FFFFFF;">American School of Kuwait</td>
-        </tr>
-    </table>
+                <!-- Navigation Area -->
+                <a class="nav-toggle pull-right"><i class="icon-align-justify"></i></a>
 
-    <div align="center">
-        <form action="fixit.php" method="post" name="contactus" id="contactus" onsubmit="return Validate()"
-              class="niceform">
-            <table border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                    <td align="right" style="padding-right:10px; padding-top:20px;">Date :
-                    </td><?php $dt = gmdate("d/m/Y g:i:s A", time() - ($ms)); ?>
-                    <td style="padding-top:20px;"><input type="text" name="cusdate" id="cusdate"
-                                                         value="<?php echo $dt; ?>" readonly="yes"/></td>
-                </tr>
-                <tr>
-                    <td align="right" style="padding-right:10px; padding-top:20px;">For :</td>
-                    <td style="padding-top:20px;"><input type="radio" name="cusfor" value="School"/><label
-                                class="check_label">School</label> &nbsp; &nbsp; &nbsp;
-                        <input type="radio" name="cusfor" value="Dunes"/><label class="check_label">Dunes</label></td>
-                </tr>
-                <tr>
-                    <td align="right" style="padding-top:15px; padding-bottom:15px; padding-right:10px;">Name :</td>
-                    <td style="padding-top:15px; padding-bottom:15px;"><input type="text" name="cusname" id="cusname"
-                                                                              size="54"/><span class="style1">*</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td align="right" style="padding-right:10px; padding-bottom:15px;">Room / Apt. :</td>
-                    <td style="padding-bottom:15px;"><input type="text" name="cusroom" id="cusroom" size="54"/><span
-                                class="style1">*</span></td>
-                </tr>
-                <tr>
-                    <td align="right" style="padding-right:10px;">Description of Issue :</td>
-                    <td><textarea name="cusdes" id="cusdes" rows="3" cols="42"></textarea></td>
-                </tr>
-                <tr>
-                    <td align="right" style="padding-right:10px; padding-top:15px;">Email ID :</td>
-                    <td style="padding-right:10px; padding-top:15px;"><input type="text" name="cusemail" id="cusemail"
-                                                                             size="54"/><span class="style1">*</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="padding-top:20px;" align="center"><input type="submit"
-                                                                                    style=" background-color:#B40101; color:#FFFFFF; width:100px; height:35px; border:0px; font-weight:bold;"
-                                                                                    name="cussubmit" value="Submit"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="padding-top:50px; padding-left:90px;">
-                        Notes:<br/>
-                        1) Check your email for updates on the job.<br/>
-                        2) Jobs will be assigned and fielded with in 2 working days.<br/>
-                        3) In case of emergency write URGENT in the "Description of Issue".<br/>
-                        4) For complaints or suggestions please email Housing Coordinator at
-                        housingcoordinator@ask.edu.kw<br/></td>
-                </tr>
-            </table>
-        </form>
+                <nav id="mobile-navigation" class="clear"></nav>
+
+                <nav id="navigation" class="pull-right">
+                    <ul>
+                        <li><a href="#">Discover ASK <i class="icon-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="docs/school-profile.pdf" target="_blank">School Profile</a></li>
+                                <li><a href="superintendent.html">Governance</a></li>
+                                <li><a href="director-of-technology.html">Directors</a></li>
+                                <li><a href="employment.html">Employment</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Programs <i class="icon-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="high-school.html">High School </a>
+                                    <ul>
+                                        <li><a href="docs/hs-course-booklet-17-18.pdf" target="_blank">Course Selection
+                                            Booklet</a></li>
+                                        <li><a href="docs/hs%20handbook.pdf" target="_blank">HS Handbook</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="middle-school.html">Middle School </a>
+                                    <ul>
+                                        <li><a href="docs/ms%20course%20booklet.pdf" target="_blank">Course Selection
+                                            Booklet</a></li>
+                                        <li><a href="docs/ms%20handbook.pdf" target="_blank">MS Handbook</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="elementary-school.html">Elementary School </a>
+                                    <ul>
+                                        <li><a href="docs/es%20handbook.pdf" target="_blank">ES Handbook</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="admissions.html">Admissions</a></li>
+
+                        <li><a href="http://mail.google.com/a/ask.edu.kw">ASK Mail</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div><!-- /span12 -->
+        </div><!-- /row -->
+    </div><!-- /container -->
+</header><!-- /top-header -->
+
+<section id="wrapper">
+    <div class="container">
+        <div class="row">
+            <div id="content" class="span12 box-padding-both">
+
+                <h1>Maintenance Request</h1>
+                <hr />
+
+                <form action="fixit.php" method="post" name="contactus" id="contactus" onsubmit="return Validate()">
+
+
+                    <label for="date">Date: </label>
+                    <?php $dt = gmdate("d/m/Y g:i:s A", time() - ($ms)); ?>
+                    <input class="input-block-level" type="text" name="cusdate" id="cusdate" value="<?php echo $dt; ?>" readonly="yes"/><br />
+
+                    <div>
+                        <label class="radio">School Maintenance
+                            <input type="radio" name="cusfor" value="School"/>
+                        </label><br />
+                        <label class="radio">Dunes Maintenance
+                            <input type="radio" name="cusfor" value="Dunes"/>
+                        </label>
+                    </div>
+
+                    <label class="control-label" for="cusname">Name: </label><br />
+                    <input class="input-block-level" type="text" name="cusname" id="cusname" placeholder="First and Last Name" required /><br />
+
+                    <label class="control-label">Room/Apt: </label><br />
+                    <input class="input-block-level" type="text" name="cusroom" id="cusroom" placeholder="Example: F24 or G118" required/><br />
+
+                    <label class="control-label">Description of Issue: </label><br />
+                    <textarea class="input-block-level" name="cusdes" id="cusdes" rows="3"></textarea><br />
+
+                    <label class="control-label">Email: </label><br />
+                    <input class="input-block-level" type="text" name="cusemail" id="cusemail" placeholder="Example: iheartabhay@ask.edu.kw" required/><br />
+
+                    <button type="submit" class="btn btn-info" name="cussubmit" value="Submit">Submit Maintenance Request</button>
+
+                </form>
+
+                <p class="lead">
+                    Notes:
+                </p>
+                <ol>
+                    <li>Check your email for updates on the job.<br/></li>
+                    <li>Jobs will be assigned and fielded with in 2 working days.</li>
+                    <li>In case of emergency write URGENT in the "Description of Issue".</li>
+                    <li>For complaints or suggestions please email <a href="mailto:housingcoordinator@ask.edu.kw">Nick Stroh</a></li>
+                </ol>
+            </div>
+        </div>
     </div>
+</section>
 
+<footer id="main-footer">
 
-</div>
+    <div class="container inner-footer box-padding-both">
+        <div class="row">
+            <!--<div class="span3">-->
+
+            <h5>About us</h5>
+
+            <p>The American School of Kuwait was founded in 1964. It is a privately owned, independent coeducational day school which offers a general academic curriculum for students of all nationalities.</p>
+
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+
+</footer>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
