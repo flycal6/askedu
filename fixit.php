@@ -44,7 +44,8 @@ if ($_POST["cussubmit"] != "") {
     $adminemail = "thomasb@ask.edu.kw";
     $fromemail = "$semail";
     $subject = "ASK Maintenance request";
-    SendHTMLMail($adminemail, $subject, $content, $fromemail);
+    SendHTMLMail($adminemail, $subject, $content, $fromemail) or die("Something didn't work, and your request was not
+    submitted.  Please send an email to thomasb@ask.edu.kw to let me know.");
 
     $content = "<table border='0' width='600'>";
     $content .= "<tr><td>Dear " . $ssname . ",<br /><p></td></tr>";
