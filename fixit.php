@@ -340,12 +340,10 @@ if ($_POST["cussubmitr"] != "") {
                     <input class="input-block-level" type="text" name="cusdate" id="cusdate" value="<?php echo $dt; ?>" readonly="yes"/><br />
 
                     <div>
-                        <label class="radio">School Maintenance
-                            <input type="radio" name="cusfor" value="School"/>
-                        </label><br />
-                        <label class="radio">Dunes Maintenance
-                            <input type="radio" name="cusfor" value="Dunes"/>
-                        </label>
+                        <label class="radio">
+                            <input type="radio" name="cusfor" value="School"/>School Maintenance</label><br />
+                        <label class="radio">
+                            <input type="radio" name="cusfor" value="Dunes"/>Dunes Maintenance</label>
                     </div>
 
                     <label class="control-label" for="cusname">Name: </label><br />
