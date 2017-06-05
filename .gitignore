@@ -64,3 +64,6 @@ jquery-gcal-flow-3.0.1/example.html
 
 # SASS Cache
 .sass-cache/*
+
+# server config
+.htaccess
