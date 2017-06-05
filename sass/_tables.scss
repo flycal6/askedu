@@ -53,3 +53,7 @@
         padding: 10px;
     }
 }
+
+.profile-of-grads-header {
+    @extend .about-beliefs-header;
+}

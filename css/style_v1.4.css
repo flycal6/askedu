@@ -643,17 +643,17 @@ ul.horizontal-tabs {
   font-weight: 400;
   text-align: center; }
 
-.ap-class-header, .about-beliefs-header {
+.ap-class-header, .about-beliefs-header, .profile-of-grads-header {
   background-color: #78a3b9;
   border: 1px solid #f7f7f7;
   color: #f7f7f7;
   font-weight: 400;
   width: 50%; }
 
-.about-beliefs-header {
+.about-beliefs-header, .profile-of-grads-header {
   background-color: #f7f7f7;
   border: 2px solid #fff; }
-  .about-beliefs-header li {
+  .about-beliefs-header li, .profile-of-grads-header li {
     color: #2d3032;
     padding: 10px; }
 
