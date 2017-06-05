@@ -1115,7 +1115,7 @@ ul.arrow li {
           width: 115px;
           color: #afbbc1 !important; }
         #navigation ul ul ul li:hover a {
-          color: #ffffff !important; }
+          color: #fff !important; }
   #navigation > ul > li > ul::before {
     content: "";
     display: block;
@@ -1133,21 +1133,26 @@ ul.arrow li {
 /* 4.4 Mobile Navigation(responsive) styling
 ==========================*/
 a.nav-toggle {
-  color: #f7f7f7;
-  font-size: 36px;
-  padding: 0 10px;
-  display: none;
-  cursor: pointer;
-  position: relative;
-  top: 42px;
-  /* Adjust this value if the toggle is not aligning with the logo correctly */
-  right: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  text-decoration: none; }
+  background: #2b333e;
+  /* uncomment this if you want the padding to have a different color */
+  color: #f7f7f7;
+  cursor: pointer;
+  display: none;
+  font-size: 36px;
+  padding: 0 10px;
+  position: relative;
+  right: 5px;
+  text-decoration: none;
+  top: 42px;
+  /* Adjust this value if the toggle is not aligning with the logo correctly */ }
+  a.nav-toggle .icon-align-justify {
+    position: relative;
+    top: 2px; }
   a.nav-toggle:hover {
-    color: #bbab95; }
+    color: #78a3b9; }
 
 #mobile-navigation {
   display: none;

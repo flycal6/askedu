@@ -627,7 +627,7 @@ ul.arrow li {
         }
 
         &:hover a {
-          color: #ffffff !important;
+          color: $white !important;
         }
       }
     }
@@ -648,27 +648,32 @@ ul.arrow li {
 ==========================*/
 
 .ie7 #navigation, .ie8 #navigation, .no-js #navigation {
-  margin-top: 3.4em;
+    margin-top: 3.4em;
 }
 
 /* 4.4 Mobile Navigation(responsive) styling
 ==========================*/
 
 a.nav-toggle {
-  color: $offwhite;
-  font-size: 36px;
-  padding: 0 10px;
-  // background: #2b333e; /* uncomment this if you want the padding to have a different color */
-  display: none;
-  cursor: pointer;
-  position: relative;
-  top: 42px;  /* Adjust this value if the toggle is not aligning with the logo correctly */
-  right: 5px;
-  @include border-radius(5px);
-  text-decoration: none;
+    @include border-radius(5px);
+    background: $nav-toggle-background; /* uncomment this if you want the padding to have a different color */
+    color: $offwhite;
+    cursor: pointer;
+    display: none;
+    font-size: 36px;
+    padding: 0 10px;
+    position: relative;
+    right: 5px;
+    text-decoration: none;
+    top: 42px;  /* Adjust this value if the toggle is not aligning with the logo correctly */
+
+  .icon-align-justify {
+      position: relative;
+      top: 2px;
+  }
 
   &:hover {
-    color: $camel;
+    color: $lightblue;
   }
 }
 
