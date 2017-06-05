@@ -167,7 +167,7 @@ if ($_POST["cussubmitr"] != "") {
     <link rel="stylesheet" href="css/style_v1.4.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
-    <link href='//fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Sintony:400,700" rel="stylesheet" type="text/css">
 
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="js/vendor/jquery-1.10.1.min.js"></script>
