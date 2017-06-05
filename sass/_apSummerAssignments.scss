@@ -1,0 +1,42 @@
+.ap-table {
+    text-align: center;
+    font-family: "Sintony", "Arial", sans-serif;
+}
+
+.ap-subject-table {
+    border: 0;
+    width: 100%;
+
+    td {
+        background-color: $esblue;
+        border: 1px solid $offwhite;
+    }
+
+    li {
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                color: $linkblue;
+            }
+        }
+    }
+}
+
+.ap-subject-header {
+    background-color: $hsblue;
+    border: 1px $white solid;
+    color: $offwhite;
+    text-align: center;
+    font-weight: 400;
+}
+
+.ap-class-header {
+    width: 50%;
+    font-weight: 400;
+    color: $offwhite;
+    background-color: $lightblue;
+    border: 1px solid $offwhite;
+}
