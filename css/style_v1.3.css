@@ -620,8 +620,8 @@ ul.horizontal-tabs {
   opacity: 0; }
 
 .ap-table {
-  text-align: center;
-  font-family: "Sintony", "Arial", sans-serif; }
+  font-family: 'Sintony', 'Arial', sans-serif;
+  text-align: center; }
 
 .ap-subject-table {
   border: 0;
@@ -640,15 +640,15 @@ ul.horizontal-tabs {
   background-color: #323e4e;
   border: 1px #fff solid;
   color: #f7f7f7;
-  text-align: center;
-  font-weight: 400; }
+  font-weight: 400;
+  text-align: center; }
 
 .ap-class-header {
-  width: 50%;
-  font-weight: 400;
-  color: #f7f7f7;
   background-color: #78a3b9;
-  border: 1px solid #f7f7f7; }
+  border: 1px solid #f7f7f7;
+  color: #f7f7f7;
+  font-weight: 400;
+  width: 50%; }
 
 /***
    Index
