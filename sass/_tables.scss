@@ -41,3 +41,15 @@
     font-weight: 400;
     width: 50%;
 }
+
+.about-beliefs-header {
+    @extend .ap-class-header;
+    background-color: $offwhite;
+    border: 2px solid $white;
+
+    li {
+        // line-height: 2em !important;
+        color: $dark;
+        padding: 10px;
+    }
+}
