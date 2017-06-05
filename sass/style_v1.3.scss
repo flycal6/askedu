@@ -13,6 +13,7 @@
 @import "fixit-style";
 @import "index";
 @import "shortcode";
+@import "apSummerAssignments";
 
 @import url('bootstrap.min.css');
 
@@ -268,7 +269,7 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin-bottom: 20px;
-  color: $h5Text;
+  color: $h5-text;
   margin-top: 0;
 }
 
@@ -3714,8 +3715,8 @@ table {
 }
 
 .sp-list-headers-h4 {
-  margin-bottom: 3px;
   color: $msgrey;
+  margin-bottom: 3px;
 }
 
 .sp-list-headers-h5 {
@@ -3727,7 +3728,7 @@ table {
 .head-split {
   margin: 0;
   height: 3px;
-  background-color: $h5Text;
+  background-color: $h5-text;
 }
 
 .sp-table {

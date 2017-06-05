@@ -1,0 +1,43 @@
+.ap-table {
+    font-family: 'Sintony', 'Arial', sans-serif;
+    text-align: center;
+}
+
+.ap-subject-table {
+    border: 0;
+    width: 100%;
+
+    td {
+        background-color: $esblue;
+        border: 1px solid $offwhite;
+    }
+
+    li {
+        list-style-type: none;
+
+        a {
+            // color: $dark;
+            text-decoration: none;
+
+            &:hover {
+                color: $linkblue;
+            }
+        }
+    }
+}
+
+.ap-subject-header {
+    background-color: $hsblue;
+    border: 1px $white solid;
+    color: $offwhite;
+    font-weight: 400;
+    text-align: center;
+}
+
+.ap-class-header {
+    background-color: $lightblue;
+    border: 1px solid $offwhite;
+    color: $offwhite;
+    font-weight: 400;
+    width: 50%;
+}
