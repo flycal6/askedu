@@ -356,7 +356,7 @@ if ($_POST["cussubmitr"] != "") {
                     <textarea class="input-block-level" name="cusdes" id="cusdes" rows="3" placeholder="Please be brief and direct"></textarea><br />
 
                     <label class="control-label">Email: </label><br />
-                    <input class="input-block-level" type="text" name="cusemail" id="cusemail" placeholder="strohn@ask.edu.kw" required/><br />
+                    <input class="input-block-level" type="text" name="cusemail" id="cusemail" placeholder="example@ask.edu.kw" required/><br />
 
                     <button type="submit" class="btn btn-info" name="cussubmit" value="Submit">Submit Maintenance Request</button>
 
@@ -370,7 +370,7 @@ if ($_POST["cussubmitr"] != "") {
                     <li>Jobs will be assigned and fielded with in 2 working days.</li>
                     <li>If you need to contact housing coordinators, please forward the confirmation email.</li>
                     <li>In case of emergency write URGENT in the "Description of Issue".</li>
-                    <li>For complaints or suggestions please email housing coordinator <a href="mailto:housingcoordinator@ask.edu.kw">Nick Stroh</a></li>
+                    <li>For complaints or suggestions please email the <a href="mailto:housingcoordinator@ask.edu.kw">housing coordinators</a></li>
                 </ol>
             </div>
         </div>
