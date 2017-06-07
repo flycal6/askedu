@@ -619,21 +619,24 @@ ul.horizontal-tabs {
 .carousel.testimonials .active.right, .carousel.mainCarousel .active.right, .carousel.showcase .active.right {
   opacity: 0; }
 
-.ap-table {
-  font-family: 'Sintony', 'Arial', sans-serif;
-  text-align: center; }
-
-.ap-subject-table {
+.ap-table, .ap-subject-table, th.about-beliefs-header, .profile-of-grads-header {
   border: 0;
+  font-family: 'Sintony', 'Arial', sans-serif;
+  text-align: center;
   width: 100%; }
-  .ap-subject-table td {
+  .ap-table td, .ap-subject-table td, th.about-beliefs-header td, .profile-of-grads-header td {
     background-color: #bed4df;
     border: 1px solid #f7f7f7; }
-  .ap-subject-table li {
+  .ap-table th, .ap-subject-table th, th.about-beliefs-header th, .profile-of-grads-header th {
+    background-color: #323e4e;
+    border: 1px solid #fff;
+    color: #f7f7f7;
+    font-weight: 400; }
+  .ap-table li, .ap-subject-table li, th.about-beliefs-header li, .profile-of-grads-header li {
     list-style-type: none; }
-    .ap-subject-table li a {
+    .ap-table li a, .ap-subject-table li a, th.about-beliefs-header li a, .profile-of-grads-header li a {
       text-decoration: none; }
-      .ap-subject-table li a:hover {
+      .ap-table li a:hover, .ap-subject-table li a:hover, th.about-beliefs-header li a:hover, .profile-of-grads-header li a:hover {
         color: #0480be; }
 
 .ap-subject-header {
@@ -643,17 +646,18 @@ ul.horizontal-tabs {
   font-weight: 400;
   text-align: center; }
 
-.ap-class-header, .about-beliefs-header, .profile-of-grads-header {
+th.ap-class-header {
   background-color: #78a3b9;
   border: 1px solid #f7f7f7;
   color: #f7f7f7;
   font-weight: 400;
   width: 50%; }
 
-.about-beliefs-header, .profile-of-grads-header {
+th.about-beliefs-header {
   background-color: #f7f7f7;
-  border: 2px solid #fff; }
-  .about-beliefs-header li, .profile-of-grads-header li {
+  border: 2px solid #fff;
+  text-align: left; }
+  th.about-beliefs-header li {
     color: #2d3032;
     padding: 10px; }
 
