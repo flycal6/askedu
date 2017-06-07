@@ -26,7 +26,7 @@
 
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="js/vendor/jquery-1.10.1.min.js"></script>
-    <script>
+    <!-- <script>
         (function(window,$){
             $(document).ready(function(){
                 var currentlocation = window.location.pathname.substr(1);
@@ -37,15 +37,10 @@
 
 
         //put google analytics here
-    </script>
+    </script> -->
 
     <style>
-        #map {
-            width: 100%;
-            height: 100%;
-            bottom: 10px;
-            background-color: grey;
-        }
+
     </style>
 
 </head>
@@ -139,56 +134,60 @@
 
                     <div class="email">
                         <i class="fa fa-envelope-o"></i>
-                        <p><a href="mailto:info@ask.edu.kw">info@ask.edu.kw</a></p>
+                        <p><a href="mailto:info@ask.edu.kw">ask@ask.edu.kw</a></p>
                     </div><!-- /email -->
 
                 </div><!-- /contact-widget -->
 
             </aside><!-- /sidebar -->
 
-            <div id="content" class="span7 offset1 box-padding-right">
+            <div id="content" class="span9 box-padding-right">
 
                 <h1>Contact Us</h1>
 
-                <p>If you would like to get in touch with us, please email us at info@ask.edu.kw or use the form below.</p>
+                <p>If you would like to get in touch with us, please visit or use one of the provided links.</p>
 
                 <hr>
 
-                <div class="row">
+                <div class="row" id="map-canvas">
 
-                    <form class="span6 contact-form form-horizontal" action="contact-form.php" method="POST" enctype="multipart/form-data" onsubmit="">
-                        <p class="success">Thank You! We will get in touch with you shortly.</p>
-                        <div class="control-group">
-                            <label class="control-label" for="fullName">Full Name</label>
-                            <div class="controls">
-                                <input type="text" class="span4" required name="fullName" id="fullName" placeholder="Your Name">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="nationality">Nationality</label>
-                            <div class="controls">
-                                <input type="text" class="span4" name="nationality" id="nationality" placeholder="Your Nationality">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="emailAddress">Email Address</label>
-                            <div class="controls">
-                                <input type="email" required class="span4" name="emailAddress" id="emailAddress" placeholder="Your Email" >
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="message">Message</label>
-                            <div class="controls">
-                                <input type="text" class="span4" name="message" id="message" placeholder="Your Message">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="controls">
-                                <button type="submit" class="cyan-btn med-btn pull-right">Send</button>
-                            </div>
-                        </div>
-                    </form>
+                    <div class="span9">
+                        <div id="map"></div>
+                        <script>
 
+        //                  <!-- Display a small skinny map on mobile -->
+                            function detectBrowser() {
+                                var useragent = navigator.userAgent;
+                                var mapdiv = document.getElementById("map");
+
+                                if (useragent.indexOf('iPhone') != -1 || useragent.indexOf('Android') != -1 ) {
+                                    mapdiv.style.width = '100%';
+                                    mapdiv.style.height = '100%';
+                                } else {
+                                    mapdiv.style.width = '100%';
+                                    mapdiv.style.height = '40vh';
+                                }
+                            }
+                            function initMap() {
+                                document.getElementById('map').style.height =
+                                        document.getElementById('map-canvas').clientHeight + 'px';
+
+                                var school_location = {lat: 29.331067, lng: 48.033990};
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                    zoom: 15,
+                                    center: school_location
+                                });
+                                var marker = new google.maps.Marker({
+                                    position: school_location,
+                                    map: map
+                                });
+                            }
+
+                        </script>
+                        <script async defer
+                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-wU-Dvfr25RJU2J2cFCeV28e7y1KYAE&callback=initMap">
+                        </script>
+                    </div>
                 </div><!-- /row -->
             </div><!-- /content -->
         </div><!-- /row -->
@@ -199,54 +198,14 @@
 <footer id="main-footer">
 
     <div class="container inner-footer box-padding-both">
-        <div class="row" id="map-canvas">
-            <div class="span3">
+        <div class="row">
 
-                <h5>About us</h5>
+            <h5>About us</h5>
 
-                <p>The American School of Kuwait was founded in 1964. It is a privately owned,
-                    independent coeducational day school which offers a general academic curriculum
-                    for students of all nationalities.</p>
+            <p>The American School of Kuwait was founded in 1964. It is a privately owned,
+                independent coeducational day school which offers a general academic curriculum
+                for students of all nationalities.</p>
 
-            </div><!-- /span3 -->
-            <div class="span9">
-                <h5>Visit Us</h5>
-                <div id="map"></div>
-                <script>
-
-//                  <!-- Display a small skinny map on mobile -->
-                    function detectBrowser() {
-                        var useragent = navigator.userAgent;
-                        var mapdiv = document.getElementById("map");
-
-                        if (useragent.indexOf('iPhone') != -1 || useragent.indexOf('Android') != -1 ) {
-                            mapdiv.style.width = '100%';
-                            mapdiv.style.height = '100%';
-                        } else {
-                            mapdiv.style.width = '100%';
-                            mapdiv.style.height = '300px';
-                        }
-                    }
-                    function initMap() {
-                        document.getElementById('map').style.height =
-                                document.getElementById('map-canvas').clientHeight + 'px';
-
-                        var school_location = {lat: 29.331067, lng: 48.033990};
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                            zoom: 15,
-                            center: school_location
-                        });
-                        var marker = new google.maps.Marker({
-                            position: school_location,
-                            map: map
-                        });
-                    }
-
-                </script>
-                <script async defer
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-wU-Dvfr25RJU2J2cFCeV28e7y1KYAE&callback=initMap">
-                </script>
-            </div>
         </div><!-- /row -->
     </div><!-- /container -->
 
