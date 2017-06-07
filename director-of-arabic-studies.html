@@ -10,23 +10,139 @@
 <head>
     <title>ASK - Director of Arabic Studies</title>
 
-    <!--#include file="partials/meta-scripts.html" -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="American School of Kuwait">
+    <meta name="viewport" content="width=device-width">
 
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+    <![endif]-->
+
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style_v1.4.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+	<!--<script src="https://use.fontawesome.com/d633105fc1.js"></script>-->
+
+    <link href="//fonts.googleapis.com/css?family=Sintony:400,700" rel="stylesheet" type="text/css">
+
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="js/vendor/jquery-1.10.1.min.js"></script>
+    <script>
+        (function(window,$){
+            $(document).ready(function(){
+                var currentlocation = window.location.pathname.substr(1);
+                var $selected = $('#dynamic-sidebar').find('a[href="'+currentlocation+'"]');
+                $selected.addClass('active').parent().addClass('current');
+            });
+        })(window,$);
+
+        //put google analytics here
+    </script>
 </head>
 <body>
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+        your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+        improve your experience.</p>
+    <![endif]-->
+
+    <header id="top-header">
+        <div class="container header-container box-padding-both">
+            <div class="row">
+                <div class="span12">
+                    <div class="logo pull-left">
+                        <a href="/"><img src="img/logo.png" alt="Anchorra Logo"/></a>
+                    </div><!-- /logo -->
+
+                    <!-- Navigation Area -->
+                    <a class="nav-toggle pull-right"><i class="icon-align-justify"></i></a>
+
+                    <nav id="mobile-navigation" class="clear"></nav>
+
+                    <nav id="navigation" class="pull-right">
+                        <ul>
+                            <li><a href="#">Discover ASK <i class="icon-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="about">About Us</a></li>
+                                    <li><a href="school-profile">School Profile</a></li>
+                                    <li><a href="superintendent">Governance</a></li>
+                                    <li><a href="director-of-technology">Directors</a></li>
+                                    <li><a href="employment">Employment</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Programs <i class="icon-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="high-school">High School </a>
+                                        <ul>
+                                            <li><a href="docs/hs-course-booklet-17-18.pdf" target="_blank">Course Selection
+                                                Booklet</a></li>
+                                            <li><a href="docs/hs%20handbook.pdf" target="_blank">HS Handbook</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="middle-school">Middle School </a>
+                                        <ul>
+                                            <li><a href="docs/ms%20course%20booklet.pdf" target="_blank">Course Selection
+                                                Booklet</a></li>
+                                            <li><a href="docs/ms%20handbook.pdf" target="_blank">MS Handbook</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="elementary-school">Elementary School </a>
+                                        <ul>
+                                            <li><a href="docs/es%20handbook.pdf" target="_blank">ES Handbook</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="admissions">Admissions</a></li>
+
+                            <li><a href="http://mail.google.com/a/ask.edu.kw">ASK Mail</a></li>
+
+                            <li><a href="contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div><!-- /span12 -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </header><!-- /top-header -->
 
 
-<!--#include file="partials/header.html" -->
+    <section id="wrapper">
+        <div class="container">
+            <div class="row">
 
 
-<section id="wrapper">
-    <div class="container">
-        <div class="row">
+                <aside id="sidebar" class="span3 box-padding-left">
 
+                    <!--<div class="download-widget widget">
 
-            <!--#include file="partials/senior-administration-sidebar.html" -->
+                      <img src="img/pdf-icon.png" alt="PDF icon">
+                      <a href="">Download Brochure</a>
+                      <span class="date">September 2014</span>
+                      <span class="size">PDF Document</span>
+                      <div class="clearfix"></div>
 
-            <div id="content" class="span9 box-padding-right">
+                    </div> /download-widget -->
+
+                    <div class="menu-widget widget">
+
+                        <h5>Governance</h5>
+
+                        <ul id="dynamic-sidebar">
+                            <li><i class="icon-caret-right"></i><a href="superintendent">Superintendent</a></li>
+                            <li><i class="icon-caret-right"></i><a href="executive-advisor">Executive Advisor</a></li>
+                            <li><i class="icon-caret-right"></i><a href="superintendent-curriculum">Superintendent of
+                                Curriculum</a></li>
+                        </ul>
+
+                    </div><!-- /menu-widget -->
+
+                </aside><!-- /sidebar -->
+
+                <div id="content" class="span9 box-padding-right">
 
                 <h2 class="col8">A Welcome from the Director of Arabic Studies</h2>
 
@@ -57,9 +173,9 @@
                     different, and learn for life!</p>
 
                 <p>Hopefully, you will one day be able to join us at the American School of Kuwait!</p>
-                <p>Sincerely,
-                <p>Mr. Fawzi Hassan
-                    <br>Director of Arabic Studies
+                <p>Sincerely,</p>
+                <p>Mr. Fawzi Hassan</p>
+                    Director of Arabic Studies
                     <br>American School of Kuwait
                     <br><a href="mailto:hassan.fawzi@ask.edu.kw">hassan.fawzi@ask.edu.kw</a>
 
@@ -69,13 +185,31 @@
                 <blockquote>We love to learn at ASK! <cite><span class="black">Fawzi Hassan</span>, ASK Director of
                     Arabic Studies</cite></blockquote>
 
-                <br>
             </div><!-- /content -->
 
         </div><!-- /row -->
     </div><!-- /container -->
 </section><!-- /wrapper -->
 
-<!--#include file="partials/footer.html" -->
+<footer id="main-footer">
+
+    <div class="container inner-footer box-padding-both">
+        <div class="row">
+
+            <h5>About us</h5>
+
+            <p>The American School of Kuwait was founded in 1964. It is a privately owned,
+                independent coeducational day school which offers a general academic curriculum
+                for students of all nationalities.</p>
+
+        </div><!-- /row -->
+    </div><!-- /container -->
+
+</footer>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+
 </body>
 </html>
