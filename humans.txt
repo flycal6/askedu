@@ -4,7 +4,6 @@ From: Willows, California, USA
 Website:  https://moneykatz.com/brian-thomas-resume/
 Github: https://github.com/flycal6
 
-Having only FTP access has made this feel like I'm doing webdev in 1995.
 
 
 Server Admin:  Abhay Dhanak
