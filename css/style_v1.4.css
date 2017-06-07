@@ -3305,4 +3305,11 @@ table {
   .sp-table th {
     border-bottom: 1px solid #444444; }
 
+.counselor-contacts div p {
+  font-size: inherit;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-left: 60px;
+  padding-top: 0; }
+
 /*# sourceMappingURL=style_v1.4.css.map */
