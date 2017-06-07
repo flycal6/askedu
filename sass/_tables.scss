@@ -1,15 +1,19 @@
-.ap-table {
+%table-base {
+    border: 0;
     font-family: 'Sintony', 'Arial', sans-serif;
     text-align: center;
-}
-
-.ap-subject-table {
-    border: 0;
     width: 100%;
 
     td {
         background-color: $esblue;
         border: 1px solid $offwhite;
+    }
+
+    th {
+        background-color: $hsblue;
+        border: 1px solid $white;
+        color: $offwhite;
+        font-weight: 400;
     }
 
     li {
@@ -26,6 +30,14 @@
     }
 }
 
+.ap-table {
+    @extend %table-base;
+}
+
+.ap-subject-table {
+    @extend %table-base;
+}
+
 .ap-subject-header {
     background-color: $hsblue;
     border: 1px $white solid;
@@ -34,7 +46,7 @@
     text-align: center;
 }
 
-.ap-class-header {
+th.ap-class-header {
     background-color: $lightblue;
     border: 1px solid $offwhite;
     color: $offwhite;
@@ -42,10 +54,11 @@
     width: 50%;
 }
 
-.about-beliefs-header {
-    @extend .ap-class-header;
+th.about-beliefs-header {
+    @extend %table-base;
     background-color: $offwhite;
     border: 2px solid $white;
+    text-align: left;
 
     li {
         // line-height: 2em !important;
@@ -55,5 +68,5 @@
 }
 
 .profile-of-grads-header {
-    @extend .about-beliefs-header;
+    @extend %table-base;
 }

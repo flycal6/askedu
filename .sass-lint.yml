@@ -6,7 +6,7 @@ rules:
   # Extends
   extends-before-mixins: 1
   extends-before-declarations: 1
-  placeholder-in-extend: 0
+  placeholder-in-extend: 1
 
   # Mixins
   mixins-before-declarations: 1
@@ -47,7 +47,7 @@ rules:
   # Nesting
   declarations-before-nesting: 1
   force-attribute-nesting: 1
-  force-element-nesting: 1
+  force-element-nesting: 0
   force-pseudo-nesting: 1
 
   # Name Formats
